@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* CSS Document */
+:root {
+	--main-color: #2e2e2e;
+	--secondary-color: #1e1e1e;
+	--white: #fff;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: Oswald, sans-serif;
+}
+
+
+h1 a,
+h1 {
+	font-size: 22px;
+	line-height: 24.5px;
+	text-decoration: none;
+	color: #000000;
+}
+
+h1 a:hover{
+	color:#333333;
+}
+
+
+
+p {
+	font-family: 'Domine' serif;
+	font-size:16px;
+	line-height:26px;
+}
+
+header {
+	background-color: var(--main-color);
+	border-bottom: #1d1d1d 1px solid;
+	height: 87px;
+}
+
+
+		nav {
+			max-width: 1224px;
+			width: 90%;
+			margin: 0 auto;
+		}
+	
+		header nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.logo{
+			color: var(--white);
+			text-wrap: nowrap;
+			font-size: 2rem;
+		}
+	
+/*MAIN MENU*/	
+#menu-icon {
+		display:none;
+	}
+nav ul {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+nav ul li {
+	border-left: 1px solid var(--secondary-color);
+	list-style: none;
+	font-family: 'Oswald';
+		font-size: 1.063 rem;
+}
+
+nav ul li a {
+	color: #fff;
+	display: block;
+	align-items: center;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	background: #333;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+	
+ul li .redList{border-bottom:3px #900 solid; z-index:3; }
+
+ul li .blueList{ border-bottom:3px #006699 solid; }
+/*MAIN MENU*/
+
+.home  { border-bottom:3px solid #636393; } 
+.tutorials  { border-bottom:3px solid  #B5222D; } 
+.news { border-bottom:3px solid  #D4953C; } 
+.about { border-bottom:3px solid  #609491; } 
+.lastChild { border-right: 1px solid #333;border-bottom:3px solid  #87A248;}
+/*MAIN MENU*/	
+
+
+		#MainBanner {
+			position: absolute;
+			width: 100%;
+			float: left;
+			background: #060606 none repeat scroll 0 0;
+			height: 770px;
+			top: 57px;
+			left: 0;
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,45484d+99 */
+			background: #000000;
+			/* Old browsers */
+			background: -moz-linear-gradient(top, #000000 0%, #45484d 99%);
+			/* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #000000 0%, #45484d 99%);
+			/* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #000000 0%, #45484d 99%);
+			/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#45484d', GradientType=0);
+			/* IE6-9 */
+			z-index: 1;
+			text-align: center;
+			border-bottom: 2px solid #1d1d1d;
+		}
+
+	#ShowcaseBanner{
+	position:relative;
+	width:100%;
+	float:left;
+	background:#060606 none repeat scroll 0 0;
+	height:160px;
+	top:57px;
+	left:0;
+	background-image:url(../images/sky.jpg);
+	z-index:1;
+		text-align:center;
+	border-bottom:2px solid #1d1d1d;
+	}
+
+
+	#pageTitle, .button-link{
+				 font-family: "Oswald";
+	}
+
+	#pageTitle{
+	color: white;
+	font-size:36px;
+			 	margin:0 auto;
+	 padding-top: 25px;
+	 padding-bottom: 25px;
+	 	text-shadow: 0px 1px 1px #4d4d4d;
+
+    text-shadow: 1px 1px 1px #000;
+	}
+	
+	.button-link{
+		min-width:120px;
+		padding:10px;
+		background:#006699;
+		color:#fff;	
+    font-size: 14px;
+	border-radius:8px;
+	border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	 -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    transition-duration: 0.5s;	
+	}
+	
+	.button-link:hover{
+		background:#036;
+		cursor:pointer;
+		
+	}
+	
+
+
+#contentWrapper {
+	float:left;
+	 background: #f7f7f7 none repeat scroll 0 0;
+    position:absolute;
+    top: 830px;
+    width: 100%;
+   height: auto;
+}
+
+.contentHolder{
+	padding:40px;
+	max-width: 1224px;
+	width: 90%;		
+		margin:0 auto;
+		background:#FFFFFF;
+		border-left: 2px solid #f0f0f0;
+    border-right: 2px solid #f0f0f0;
+		height:auto;
+		min-height:100%;
+		display:block;
+		overflow:hidden;
+	}
+	
+	
+	
+
+/* Remove extra left and right margins, due to padding */
+.RowGallery {
+	width:25%;
+	margin: 0 auto;
+float:left;
+}
+
+
+
+	.ColGallery {
+
+  padding: 0 10px;
+}
+
+
+
+	.CardGallery{
+		margin-bottom:20px;
+    text-align: center;
+    padding: 10px;
+	border-radius:3px;
+	box-shadow:0 1px 3px rgba(0, 0, 0, 0.3);
+	}
+	
+
+
+	
+	
+	footer {
+		border-top:#000 2px solid;
+  background:#2e2e2e;
+	width:100%;
+	height:220px;
+	position:relative;
+	bottom:0;
+	left:0;
+}
+
+
