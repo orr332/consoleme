@@ -18,8 +18,8 @@
 	--ProjectHolderMargins:50px;
 	--border-radius: 10px;
 	--image-border-radius:5px;
-	--HeroBannerWidth: 95rem;
-	--ContainerWidth: 85rem;
+	--HeroBannerWidth: 101.25rem;
+	--ContainerWidth: 81.25rem;
 	--Lineheight: 1.6rem;
 	--SecondaryLineHeight:2.5rem;
 	--main-color: #1b1b1b;
@@ -284,9 +284,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	border: var(--BorderColor) 1px solid;
 	box-shadow: var(--boxShadow);
 	  box-sizing: border-box;
-
-height: auto;
-  min-height: 350px;
+height: fit-content;
   	overflow: auto;
 }
 
@@ -301,6 +299,7 @@ height: auto;
 	border-top-right-radius: var(--image-border-radius);
   width: 100%;
   height: auto;
+  max-height: 13.125rem;
   	object-fit: cover;
 	overflow: auto;
 	background-size: cover;
@@ -328,7 +327,7 @@ height: auto;
 }
 
 .button-link {
-	margin-top: 10px;
+	margin-top: 40px;
 	padding: 12px 14px 12px 14px;
 	background: var(--favBlue);
 	color: #ffffff;

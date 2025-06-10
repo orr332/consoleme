@@ -96,6 +96,14 @@ gap: 2rem;
 	}
 
 	@media (max-width: 720px) {
+			.logo {
+		top: 0;
+		left: 0;
+		z-index: 999;
+		font-weight: 500;
+		margin-left: 20px;
+	}
+
 		.ProjectHolder{
 
 		}
