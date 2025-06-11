@@ -14,11 +14,11 @@
 	--LightGreyHighlight: #f4f2ee;
 	--box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	--GalleryPadding: 50px;
-	--HeroBannerPadding:80px 0 80px 0;
+	--HeroBannerPadding:100px 0 100px 0;
 	--ProjectHolderMargins:50px;
 	--border-radius: 10px;
 	--image-border-radius:5px;
-	--HeroBannerWidth: 101.25rem;
+	--HeroBannerWidth: 100rem;
 	--ContainerWidth: 81.25rem;
 	--Lineheight: 1.5rem;
 	--SecondaryLineHeight:2.25rem;
@@ -163,31 +163,32 @@ border-radius: 5px; /* Default border radius */
 
 .HeroBanner {
 	width: 100%;
-			background-image: url(../images/forest.webp);
+			/* background-image: url(../images/forest.webp); */
     background-size: cover;
+	background-color: var(--favBlue);
 
 }
 
 .HeroBanner h1{
 	line-height: calc(var(--SecondaryLineHeight) + 1.5rem);
 	z-index:999;
-		color: var(--main-color);
+		color: white;
 		text-align: left;
 }
 
 
 .HeroBanner p{
-color: var(--main-color);
+		color: white;
 
 }
 
 .innerBanner{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
-	gap: 2rem;
+	gap: 1rem;
 		justify-content: center;
 	padding: var(--HeroBannerPadding);
-	max-width: var(--HeroBannerWidth);
+max-width: var(--ContainerWidth);
 	width: 100%;
 	margin: 0 auto;
 }
