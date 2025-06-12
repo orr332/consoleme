@@ -132,6 +132,7 @@ nav ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 1rem;
 
 }
 
@@ -148,7 +149,7 @@ nav ul li a {
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
-	padding: 20px;
+	padding: 10px;
 
 }
 
@@ -158,7 +159,7 @@ border-radius: 5px; /* Default border radius */
   transition: border-radius 0.3s ease 1; 
 	background-color: #006699;
 	color: white;
-	padding: 20px;
+	padding: 10px;
 }
 /*MAIN MENU*/
 
@@ -166,7 +167,7 @@ border-radius: 5px; /* Default border radius */
 .HeroBanner {
 	width: 100%;
 			/* background-image: url(../images/forest.webp); */
-    background-size: cover;
+    background-size:cover;
  overflow: hidden;
     background: var(--favBlue);  /* fallback colour. Make sure this is just one solid colour. */
     background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../images/forest.webp");
@@ -220,7 +221,7 @@ max-width: var(--ContainerWidth);
 	max-width: var(--ContainerWidth);
 	width: 100%;
 	height:fit-content;
-	margin: 25px auto;
+	margin: 50px auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
