@@ -49,7 +49,7 @@
 
 p, p a{
 	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
+	font-size: .9rem;
 	font-style: normal;
 	line-height: var(--Lineheight);
 	overflow-wrap: break-word;
@@ -155,10 +155,10 @@ nav ul li a {
 
 nav ul li a:hover{
 	cursor: pointer;
-border-radius: 5px; /* Default border radius */
+border-radius: 25px; /* Default border radius */
   transition: border-radius 0.3s ease 1; 
-	background-color: #006699;
-	color: white;
+	background-color: var(--secondary-color);
+	color: var(--main-color);
 	padding: 10px;
 }
 /*MAIN MENU*/
@@ -167,11 +167,11 @@ border-radius: 5px; /* Default border radius */
 .HeroBanner {
 	width: 100%;
 			/* background-image: url(../images/forest.webp); */
-    background-size:cover;
+    background-size:contain;
  overflow: hidden;
     background: var(--favBlue);  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../images/forest.webp");
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../images/forest.webp"); /* The least supported option. */
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../images/station.jpg");
+    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../images/station.jpg"); /* The least supported option. */
 }
 
 .HeroBanner h1{
@@ -307,7 +307,7 @@ height: fit-content;
 
 .Cards h1{
 	font-family: var(--HeadlineFont);
-  letter-spacing: 1;
+  letter-spacing: .25px;
     font-size: var(--CardHeader);
 		font-weight: bold;
 	text-align: left;
@@ -323,18 +323,19 @@ height: fit-content;
 }
 
 .button-link {
+	width: 100%;
 	margin-top: 40px;
-	padding: 10px 12px 10px 12px;
+	padding: 10px 18px 10px 18px;
 	background: var(--favBlue);
 	color: #ffffff;
 	font-family: var(--HeadlineFont);
-	font-weight: 700;
+	font-weight: 600;
     font-size: 1rem;
 	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: calc(var(--border-radius) - .2em);
+	border-radius: calc(var(--border-radius) + 20px);
 	border: solid 1px var(--LightGreyHighlight);
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
