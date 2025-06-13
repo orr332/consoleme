@@ -253,6 +253,7 @@ max-width: var(--ContainerWidth);
 	color: var(--favBlue);
 	text-align: left;
 	line-height: calc(var(--SecondaryLineHeight) + 1.063rem;);
+		margin-left: -2px;
 }
 
 .contentHolderHeader p::after {
@@ -313,6 +314,7 @@ height: fit-content;
 	text-align: left;
 	color: var(--favBlue);
 	list-style: var(--SecondaryLineHeight);
+	margin-left: -1px;
 }
 
 
