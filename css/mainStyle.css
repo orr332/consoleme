@@ -13,7 +13,7 @@
 	/* --favBlue:#1d2834;*/
 	--LightGreyHighlight: #f4f2ee;
 	--box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	--GalleryPadding: 50px;
+	--GalleryPadding: 40px;
 	--HeroBannerPadding:100px 0 100px 0;
 	--ProjectHolderMargins:50px;
 	--border-radius: 10px;
@@ -132,7 +132,7 @@ nav ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: 1.5rem;
 
 }
 
@@ -143,7 +143,7 @@ nav ul li {
 nav ul li a {
 	color: var(--favBlue);
 	font-family: var(--HeadlineFont);
-	font-size: 1rem;
+	font-size: .9rem;
 	letter-spacing: .02rem;
 	font-weight: bold;	
 	align-items: center;
@@ -165,13 +165,11 @@ border-radius: 25px; /* Default border radius */
 
 
 .HeroBanner {
+background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699);
 	width: 100%;
-			/* background-image: url(../images/forest.webp); */
-    background-size:contain;
+		background-image: url(../images/airplane.jpg);
+    background-size:cover;
  overflow: hidden;
-    background: var(--favBlue);  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../images/station.jpg");
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url("../images/station.jpg"); /* The least supported option. */
 }
 
 .HeroBanner h1{
@@ -253,7 +251,7 @@ max-width: var(--ContainerWidth);
 	color: var(--favBlue);
 	text-align: left;
 	line-height: calc(var(--SecondaryLineHeight) + 1.063rem;);
-		margin-left: -2px;
+		margin-left: -1px;
 }
 
 .contentHolderHeader p::after {
@@ -314,7 +312,7 @@ height: fit-content;
 	text-align: left;
 	color: var(--favBlue);
 	list-style: var(--SecondaryLineHeight);
-	margin-left: -1px;
+	margin-left: -0.5px;
 }
 
 
