@@ -20,11 +20,11 @@
 	--image-border-radius:5px;
 	--HeroBannerWidth: 100rem;
 	--ContainerWidth: 81.25rem;
-	--Lineheight: 1.65rem;
-	--SecondaryLineHeight: 3.5rem;
+	--Lineheight: 1.75rem;
+	--SecondaryLineHeight: 2.75rem;
 	--main-color: #1b1b1b;
 	--secondary-color: #e9e9e9;
-	--LightGrey-color: #737272;
+	--LightGrey-color: #6a6a6a;
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Archivo", sans-serif;
 	--HeaderMain: 4rem;
@@ -75,7 +75,7 @@ h1 a,
 h1 {
 	font-family: var(--HeadlineFont);
 	font-size: var(--HeaderMain);
-	font-weight: 700;
+	font-weight: 500;
 	text-decoration: none;
 	flex-wrap: nowrap;
 	text-align: center;
@@ -113,7 +113,7 @@ max-width: var(--ContainerWidth);
 header .logo {
     color: var(--main-color);
 	text-wrap: nowrap;
-	font-weight: 700;
+	font-weight: 500;
 		letter-spacing: .02rem;
     font-size: 30px;
 	font-style: italic;
@@ -144,9 +144,9 @@ nav ul li {
 nav ul li a {
 	color: var(--favBlue);
 	font-family: var(--HeadlineFont);
-	font-size: .9rem;
+	font-size: 1rem;
 	letter-spacing: .02rem;
-	font-weight: 600;	
+	font-weight: 500;	
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
@@ -247,7 +247,7 @@ max-width: var(--ContainerWidth);
 	color: var(--favBlue);
 	text-align: left;
 	line-height: var(--SecondaryLineHeight);
-		margin-left: -2px;
+		margin-left: -3px;
 }
 
 .contentHolderHeader p::after {
@@ -296,7 +296,7 @@ height: fit-content;
 }
 
 .CardInfo{
-	padding:1.5rem;
+	padding:.75rem 1.5rem;
 }
 
 .Cards h1{
@@ -307,14 +307,12 @@ height: fit-content;
 	text-align: left;
 	color: var(--favBlue);
 	line-height: var(--SecondaryLineHeight);
-	margin-left: -0.5px;
 }
 
 .Cards h1::after{
 	display: block;
 	content: "";
 	border-bottom: 1px solid var(--secondary-color);
-
 }
 
 .CardInfoGrid{
@@ -331,26 +329,24 @@ height: fit-content;
   list-style-type: none;
 }
  .CardInfoGridBox ul li {
-color: #006699;
+color:var(--LightGrey-color);
 	font-family: var(--HeadlineFont);
-	font-size: 1rem;
+	font-size: .75rem;
 	font-weight: 500;	
 	text-decoration: none;
-	line-height: var(--Lineheight);
-	
+	line-height: 18px;
 	letter-spacing: .25px;
  }
 
 .CardInfoGridBox ul li::before{
   content: '';
 	display: inline-block;
-	background-color: #006699;
-	border-radius: 5px;
+	background-color: var(--LightGrey-color);
+	border-radius: 2px;
 	margin-right: 5px; 
 	margin-top: -2px; 
-	width: 14px;
-	height: 14px;
-	vertical-align: -2px;
+	width: 10px;
+	height: 10px;
 } 
 
 
