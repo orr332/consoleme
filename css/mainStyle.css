@@ -21,7 +21,7 @@
 	--HeroBannerWidth: 100rem;
 	--ContainerWidth: 81.25rem;
 	--Lineheight: 1.65rem;
-	--SecondaryLineHeight: 3rem;
+	--SecondaryLineHeight: 3.5rem;
 	--main-color: #1b1b1b;
 	--secondary-color: #e9e9e9;
 	--CardColor: #F3F4F5;
@@ -296,7 +296,7 @@ height: fit-content;
 }
 
 .CardInfo{
-	padding: 1rem 2rem 2rem 2rem;
+	padding: .5rem 2rem 2rem 2rem;
 }
 
 .Cards h1{
@@ -337,7 +337,7 @@ color: var(--main-color);
 	font-weight: 700;	
 	text-decoration: none;
 	line-height: var(--Lineheight);
-	margin-top: 10px;
+	margin-top: 20px;
  }
 
 .CardInfoGridBox ul li::before{
