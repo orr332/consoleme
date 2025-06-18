@@ -20,7 +20,7 @@
 	--image-border-radius:5px;
 	--HeroBannerWidth: 100rem;
 	--ContainerWidth: 81.25rem;
-	--Lineheight: 1.75rem;
+	--Lineheight: 1.65rem;
 	--SecondaryLineHeight: 2.75rem;
 	--main-color: #1b1b1b;
 	--secondary-color: #e9e9e9;
@@ -296,7 +296,7 @@ height: fit-content;
 }
 
 .CardInfo{
-	padding:.75rem 1.5rem;
+	padding:1.5rem;
 }
 
 .Cards h1{
@@ -306,15 +306,16 @@ height: fit-content;
 		font-weight: 500;
 	text-align: left;
 	color: var(--favBlue);
-	line-height: var(--SecondaryLineHeight);
+	line-height: var(--Lineheight);
 }
 
-.Cards h1::after{
+/* .Cards h1::after{
 	display: block;
 	content: "";
 	border-bottom: 1px solid var(--secondary-color);
+margin-bottom: 5px;
 }
-
+ */
 .CardInfoGrid{
 	display: flex;
 	justify-content: space-between;
@@ -334,7 +335,7 @@ color:var(--LightGrey-color);
 	font-size: .75rem;
 	font-weight: 500;	
 	text-decoration: none;
-	line-height: 18px;
+	line-height: var(--Lineheight);
 	letter-spacing: .25px;
  }
 
