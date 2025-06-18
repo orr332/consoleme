@@ -303,7 +303,7 @@ height: fit-content;
 	font-family: var(--HeadlineFont);
   letter-spacing: .25px;
     font-size: var(--CardHeader);
-		font-weight: bold;
+		font-weight: 600;
 	text-align: left;
 	color: var(--favBlue);
 	line-height: var(--SecondaryLineHeight);
@@ -334,7 +334,7 @@ height: fit-content;
 color: #006699;
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
-	font-weight: 700;	
+	font-weight: 500;	
 	text-decoration: none;
 	line-height: var(--Lineheight);
 	
