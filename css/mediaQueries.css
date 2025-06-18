@@ -44,16 +44,7 @@ width: 100%;
 		margin-top: 20px;
 	}
 
-	.contentHolderHeader h1 {
-		font-family: var(--HeadlineFont);
-		font-weight: 900;
-		font-size: 1.6em;
-		text-transform: uppercase;
-		font-style: italic;
-		text-align: center;
-		color: var(--favBlue);
-		letter-spacing: -.02em;
-	}
+	
 	.Cards h1{
 		font-size: 1.0em;
 	}
