@@ -174,7 +174,6 @@ background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #0
 }
 
 .HeroBanner h1{
-	line-height: calc(var(--SecondaryLineHeight) + 2.25rem);
 	z-index:999;
 		color: white;
 		text-align: left;
@@ -247,7 +246,7 @@ max-width: var(--ContainerWidth);
 			font-weight: bold;
 	color: var(--favBlue);
 	text-align: left;
-	line-height: calc(var(--SecondaryLineHeight) + 1rem);
+	line-height: var(--SecondaryLineHeight);
 		margin-left: -2px;
 }
 
