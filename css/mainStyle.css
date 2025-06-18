@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 
 
@@ -13,22 +13,22 @@
 	/* --favBlue:#1d2834;*/
 	--LightGreyHighlight: #f4f2ee;
 	--box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	--GalleryPadding: 40px;
+	--GalleryPadding: 50px;
 	--HeroBannerPadding:100px 0 100px 0;
 	--ProjectHolderMargins:50px;
 	--border-radius: 10px;
 	--image-border-radius:5px;
 	--HeroBannerWidth: 100rem;
 	--ContainerWidth: 81.25rem;
-	--Lineheight: 1.5rem;
-	--SecondaryLineHeight:2.25rem;
+	--Lineheight: 1.65rem;
+	--SecondaryLineHeight: 3rem;
 	--main-color: #1b1b1b;
 	--secondary-color: #e9e9e9;
 	--CardColor: #F3F4F5;
---HeadlineFont: "Nunito Sans", sans-serif;
-	--HeaderMain: 3rem;
-	--SubHeader: 1.875rem;
-	--CardHeader: 1.25rem;
+--HeadlineFont:  "Quicksand", sans-serif;
+	--HeaderMain: 4rem;
+	--SubHeader: 2.5rem;
+	--CardHeader: 1.35rem;
 }
 
 * {
@@ -67,7 +67,7 @@ p, p a{
 
 html{
 	overflow-x: hidden;
-background-color: var(--secondary-color);
+background-color: var(--secondary-color); 
 }
 
 h1 a,
@@ -145,7 +145,7 @@ nav ul li a {
 	font-family: var(--HeadlineFont);
 	font-size: .9rem;
 	letter-spacing: .02rem;
-	font-weight: bold;	
+	font-weight: 700;	
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
@@ -156,7 +156,7 @@ nav ul li a {
 nav ul li a:hover{
 	cursor: pointer;
 border-radius: 25px; /* Default border radius */
-  transition: border-radius 0.3s ease 1; 
+ border-radius 0.3s ease 1; 
 	background-color: var(--secondary-color);
 	color: var(--main-color);
 	padding: 10px;
@@ -173,7 +173,7 @@ background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #0
 }
 
 .HeroBanner h1{
-	line-height: calc(var(--SecondaryLineHeight) + 1.5rem);
+	line-height: calc(var(--SecondaryLineHeight) + 2.25rem);
 	z-index:999;
 		color: white;
 		text-align: left;
@@ -207,24 +207,20 @@ max-width: var(--ContainerWidth);
 
 
 
-
-
-
 .ProjectHolder{
-	background-color: var(--background-color);
-	box-shadow: var(--box-shadow);
+	background-color: white;
+	 box-shadow: var(--box-shadow);
 	border:  1px solid var(--BorderColor);
-	border-radius: var(--border-radius);
+	border-radius: var(--border-radius); 
 	padding: var(--GalleryPadding);
 	max-width: var(--ContainerWidth);
 	width: 100%;
 	height:fit-content;
-	margin: 50px auto;
+	margin: 30px auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-
 }
 
 
@@ -250,14 +246,14 @@ max-width: var(--ContainerWidth);
 			font-weight: bold;
 	color: var(--favBlue);
 	text-align: left;
-	line-height: calc(var(--SecondaryLineHeight) + 1.063rem;);
-		margin-left: -1px;
+	line-height: calc(var(--SecondaryLineHeight) + 1rem);
+		margin-left: -2px;
 }
 
 .contentHolderHeader p::after {
 	display: block;
 	content: '';
-	border-bottom: 1px solid var(--BorderColor);
+	border-bottom: 1px solid var(--secondary-color);
 	width: 100%;
 	padding-top: 20px;
 	margin-bottom: 2rem;
@@ -280,7 +276,7 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	box-shadow: var(--boxShadow);
 	  box-sizing: border-box;
 height: fit-content;
-  	overflow: auto;
+  	overflow: hidden;
 }
 
 .Cards:hover{
@@ -294,14 +290,13 @@ height: fit-content;
 	border-top-right-radius: var(--image-border-radius);
   width: 100%;
   height: auto;
-  /* max-height: 13.125rem; */
   	object-fit: cover;
 	overflow: auto;
 	background-size: cover;
 }
 
 .CardInfo{
-	padding: 1.5rem;
+	padding: 1rem 2rem 2rem 2rem;
 }
 
 .Cards h1{
@@ -311,26 +306,67 @@ height: fit-content;
 		font-weight: bold;
 	text-align: left;
 	color: var(--favBlue);
-	list-style: var(--SecondaryLineHeight);
+	line-height: var(--SecondaryLineHeight);
 	margin-left: -0.5px;
 }
 
+.Cards h1::after{
+	display: block;
+	content: "";
+	border-bottom: 1px solid var(--secondary-color);
+
+}
+
+.CardInfoGrid{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+
+.CardInfoGridBox ul{
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;	
+  list-style-type: none;
+}
+ .CardInfoGridBox ul li {
+color: var(--main-color);
+	font-family: var(--HeadlineFont);
+	font-size: .9rem;
+	font-weight: 700;	
+	text-decoration: none;
+	line-height: var(--Lineheight);
+	margin-top: 10px;
+ }
+
+.CardInfoGridBox ul li::before{
+  content: '';
+	display: inline-block;
+	background-color: var(--main-color);
+	border-radius: 5px;
+	margin-right: 5px; 
+	margin-top: -2px; 
+	width: 14px;
+	height: 14px;
+	vertical-align: -2px;
+} 
 
 
 .CardButton{
 	display: flex;
 	justify-content: flex-end;
+	margin-top: 40px;
 }
 
 .button-link {
 	width: 100%;
-	margin-top: 40px;
 	padding: 10px 18px 10px 18px;
 	background: var(--favBlue);
 	color: #ffffff;
 	font-family: var(--HeadlineFont);
 	font-weight: 600;
-    font-size: 1rem;
+    font-size: .9rem;
 	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;
