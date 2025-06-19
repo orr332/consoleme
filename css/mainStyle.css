@@ -112,8 +112,7 @@ max-width: var(--ContainerWidth);
 header .logo a{
     color: var(--main-color);
 	text-wrap: nowrap;
-	font-weight: 500;
-		letter-spacing: .02rem;
+	
     font-size: 30px;
 	font-style: italic;
 	display: flex;
@@ -146,8 +145,6 @@ nav ul li a {
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
-	letter-spacing: .02rem;
-	font-weight: 500;	
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
@@ -305,7 +302,6 @@ height: fit-content;
 
 .Cards h1{
 	font-family: var(--HeadlineFont);
-  letter-spacing: .25px;
     font-size: var(--CardHeader);
 		font-weight: 700;
 	text-align: left;
