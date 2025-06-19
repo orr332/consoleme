@@ -38,8 +38,6 @@ width: 100%;
 	color: white;
 	font-weight: 800;
     font-size: 2.5em;
-	text-transform: uppercase;
-	font-style: italic;
 		letter-spacing: -.02em;
 		margin-top: 20px;
 	}
@@ -101,5 +99,9 @@ gap: 2rem;
 		}
 	.Cards{
 		width: 100%;
+	}
+	.HeroBannerBox .button-link{
+				width: 100%;
+
 	}
 }
