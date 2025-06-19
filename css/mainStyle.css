@@ -7,7 +7,7 @@
 
 :root {
 	/* --BorderColor: #e2e2e3; */
-	--BorderColor: #cbcbcb;
+	--BorderColor: #c5c5c5;
 	--background-color: #fafafa;
 	--favBlue:#2F373D;
 	/* --favBlue:#1d2834;*/
@@ -189,7 +189,7 @@ background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #0
 .innerBanner{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
-	gap: 1rem;
+	gap: 2rem;
 		justify-content: space-between;
 	padding: var(--HeroBannerPadding);
 max-width: var(--ContainerWidth);
@@ -201,6 +201,7 @@ max-width: var(--ContainerWidth);
 
 .HeroBannerBox{
 	width: 100%;
+	position: relative;
 	/* background-color: var(--LightGreyHighlight);
 	padding: 25px;
 	border-radius: var(--border-radius); */
@@ -219,7 +220,7 @@ max-width: var(--ContainerWidth);
 	max-width: var(--ContainerWidth);
 	width: 100%;
 	height:fit-content;
-	margin: 30px auto;
+	margin: 20px auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -373,7 +374,7 @@ vertical-align: -1px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: calc(var(--border-radius) + 20px);
+	border-radius: var(--border-radius);
 	border: solid 1px var(--LightGreyHighlight);
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
@@ -388,10 +389,12 @@ vertical-align: -1px;
 
 
 .HeroBannerBox .button-link{
-	margin-top: 50px;
+	position: absolute;
+	bottom: 0;
 	color:var(--main-color);
 		width: 25%;
 		background: white;
+		border-radius: var(--border-radius);
 }
 
 
