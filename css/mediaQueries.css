@@ -4,7 +4,7 @@
 
 
 
-@media (max-width: 980px) {
+@media (max-width: 1390px) {
 	.logo {
 		top: 0;
 		left: 0;
@@ -15,12 +15,10 @@
 
 	#pageTitle {
 		font-size: 18px;
-		float: left;
 		margin-left: 15px;
 	}
 
 	.button-link {
-		float: right;
 		margin-top: 25px;
 		margin-right: 15px;
 
@@ -29,9 +27,31 @@
 .innerBanner{
 display: flex;
 flex-direction: column;
+padding: 100px;
 width: 100%;
 }
+.HeroBanner{
+		flex-direction: column;
+}
+.innerBanner h1{
+	font-family: var(--HeadlineFont);
+	color: white;
+	font-weight: 800;
+    font-size: 2.5em;
+		letter-spacing: -.02em;
+		margin-top: 20px;
+	}
 
+	
+	.Cards h1{
+		font-size: 1.0em;
+	}
+	.Cards{
+
+	}
+.button-link{
+	width: 100%;
+}
 	nav ul li{
 		display: none;
 	}
@@ -45,7 +65,43 @@ width: 100%;
 
 	}
 	.ProjectHolder{
-		border-radius: 0%;
-		margin: 5px auto;
+		border-radius: 12px;
+		margin: 40 auto;
+		padding: 50px;
+		width: 90%;
+	}
+	.CardGallery{
+		display: grid;
+grid-template-columns: repeat(2, 1fr); 
+
+	}
+}
+
+@media (max-width: 880px) {
+	.CardGallery{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+margin: 0 auto;
+gap: 2rem;
+	}
+
+	@media (max-width: 720px) {
+			.logo {
+		top: 0;
+		left: 0;
+		z-index: 999;
+		font-weight: 500;
+		margin-left: 20px;
+	}
+
+		.ProjectHolder{
+
+		}
+	.Cards{
+		width: 100%;
+	}
+	.HeroBannerBox .button-link{
+				width: 100%;
+
 	}
 }
