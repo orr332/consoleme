@@ -29,7 +29,7 @@
 --HeadlineFont:  "Archivo", sans-serif;
 	--HeaderMain: 3.75rem;
 	--SubHeader:2.5rem;
-	--CardHeader: 1.25rem;
+	--CardHeader: 1.5rem;
 }
 
 * {
@@ -120,7 +120,7 @@ header .logo a{
 }
 
 header .logo a:hover{
-	color:var(--LightGrey-color);
+	color:var(--secondary-color);
 }
 
 /*MAIN MENU*/
@@ -154,7 +154,7 @@ nav ul li a {
 nav ul li a:hover{
 	cursor: pointer;
 border-radius: 25px; /* Default border radius */
-	background-color:var(--BorderColor);
+	background-color:var(--secondary-color);
 	color: var(--LightGreyHighlight);
 	padding: 15px;
 }
@@ -336,6 +336,7 @@ color:var(--LightGrey-color);
 	text-decoration: none;
 	line-height: var(--Lineheight);
 	letter-spacing: .25px;
+	margin-bottom: 10px;
  }
 
 .CardInfoGridBox ul li::before{
@@ -361,8 +362,8 @@ vertical-align: -1px;
 	background: var(--favBlue);
 	color: #ffffff;
 	font-family: var(--HeadlineFont);
-	font-weight: 600;
-    font-size: .9rem;
+	font-weight: 400;
+    font-size: 1rem;
 	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;
