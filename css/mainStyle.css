@@ -16,8 +16,8 @@
 	--GalleryPadding: 50px;
 	--HeroBannerPadding:100px 0 100px 0;
 	--ProjectHolderMargins:50px;
-	--border-radius: 10px;
-	--image-border-radius:5px;
+	--border-radius: 12px;
+	--image-border-radius:6px;
 	--HeroBannerWidth: 100rem;
 	--ContainerWidth: 81.25rem;
 	--Lineheight: 1.625rem;
@@ -153,7 +153,7 @@ nav ul li a {
 
 nav ul li a:hover{
 	cursor: pointer;
-border-radius: 25px; /* Default border radius */
+border-radius: var(--border-radius); /* Default border radius */
 	background-color:var(--secondary-color);
 	color: var(--LightGreyHighlight);
 	padding: 15px;
@@ -247,6 +247,7 @@ max-width: var(--ContainerWidth);
 	color: var(--favBlue);
 	text-align: left;
 		margin-left: -3px;
+			line-height: calc(var(--SecondaryLineHeight) + .25rem);
 }
 
 .contentHolderHeader p::after {
@@ -304,8 +305,7 @@ height: fit-content;
 		font-weight: 700;
 	text-align: left;
 	color: var(--favBlue);
-	line-height: var(--Lineheight);
-
+	line-height: calc(var(--Lineheight) + .25rem);
 }
 
 /* .Cards h1::after{
