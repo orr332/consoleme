@@ -247,7 +247,7 @@ max-width: var(--ContainerWidth);
 	color: var(--favBlue);
 	text-align: left;
 		margin-left: -3px;
-			line-height: calc(var(--SecondaryLineHeight) + .25rem);
+margin-bottom: 10px;
 }
 
 .contentHolderHeader p::after {
@@ -279,11 +279,6 @@ height: fit-content;
   	overflow: hidden;
 }
 
-.Cards:hover{
-  transform: scale(1); /* Slightly scale up the card */
-  transition: ease-in-out 1s;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
-}
 
 .Cards img{
 	border-top-left-radius: var(--image-border-radius);
@@ -358,17 +353,17 @@ vertical-align: -1px;
 }
 
 .button-link {
+	width: 100%;
 	padding: 10px 18px 10px 18px;
 	background: var(--favBlue);
 	color: #ffffff;
 	font-family: var(--HeadlineFont);
-	font-weight: 400;
     font-size: 1rem;
 	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: var(--border-radius);
+	border-radius: var(--image-border-radius);
 	border: solid 1px var(--LightGreyHighlight);
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
@@ -388,7 +383,7 @@ vertical-align: -1px;
 	color:var(--main-color);
 		width: 25%;
 		background: white;
-		border-radius: var(--border-radius);
+	border-radius: var(--image-border-radius);
 }
 
 
