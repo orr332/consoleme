@@ -19,7 +19,7 @@
 	--border-radius: 12px;
 	--image-border-radius:6px;
 	--HeroBannerWidth: 120rem;
-	--ContainerWidth: 1300px;
+	--ContainerWidth: 84.375rem;
 	--Lineheight: 1.6rem;
 	--SecondaryLineHeight: 2.50rem;
 	--main-color: #1b1b1b;
@@ -132,7 +132,7 @@ nav ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1.5rem;
+	gap: 1rem;
 
 }
 
