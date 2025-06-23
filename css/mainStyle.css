@@ -167,7 +167,6 @@ border-radius: var(--border-radius); /* Default border radius */
 		background-image: url(../images/airplane.jpg);
     background-size:cover;
 	width: 100%;
-	max-height:638px;
 	background-color: var(--LightGrey-color);
  overflow: hidden;
 }
