@@ -28,7 +28,7 @@
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Mulish", sans-serif;
 	--HeaderMain: 3.75rem;
-	--SubHeader:3rem;
+	--SubHeader:2.50rem;
 	--CardHeader: 1.25rem;
 }
 
@@ -250,7 +250,6 @@ max-width: var(--ContainerWidth);
 	color: var(--favBlue);
 	text-align: left;
 		margin-left: -3px;
-		margin-bottom: 8px;
 }
 
 .contentHolderHeader p::after {
