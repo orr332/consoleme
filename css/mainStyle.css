@@ -164,10 +164,10 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .HeroBanner {
 	width: 100%;
-		/* background-image: url(../images/airplane.jpg); */
+		background-image: url(../images/airplane.jpg);
     background-size:cover;
 	width: 100%;
-	height: ;
+	max-height:638px;
 	background-color: var(--LightGrey-color);
  overflow: hidden;
 }
