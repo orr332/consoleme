@@ -14,7 +14,7 @@
 	/* --LightGreyHighlight: #f4f2ee; */
 	--box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 	--GalleryPadding: 60px;
-	--HeroBannerPadding:100px 50px 100px 50px;
+	--HeroBannerPadding:100px;
 	--ProjectHolderMargins:50px;
 	--border-radius: 12px;
 	--image-border-radius:6px;
@@ -27,9 +27,9 @@
 	--LightGrey-color: #6a6a6a;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Mulish", sans-serif;
-	--HeaderMain: 3.75rem;
-	--SubHeader:2.50rem;
-	--CardHeader: 1.25rem;
+	--HeaderMain: 3.5rem;
+	--SubHeader: 2.5rem;
+	--CardHeader: 1.50rem;
 }
 
 * {
@@ -46,6 +46,8 @@
 	grid-template-rows: auto 1fr auto;
 	grid-template-columns: minmax(0, 1fr);	
 	min-height: 100vh;
+	 box-shadow: var(--box-shadow);
+	border:  1px solid var(--BorderColor);
 }
 
 p, p a{
@@ -75,7 +77,7 @@ h1 a,
 h1 {
 	font-family: var(--HeadlineFont);
 	font-size: var(--HeaderMain);
-	font-weight: 500;
+	font-weight: 700;
 	text-decoration: none;
 	flex-wrap: nowrap;
 	text-align: center;
@@ -94,12 +96,12 @@ header {
 	z-index: 5;
 	width: 100%;
 	height: 75px;
-	border-bottom: 1px solid var(--BorderColor);
-	background-color: white;
-
+/* 	border-bottom: 1px solid var(--BorderColor);
+	background-color: white; */
 }
 
 .navContainer{
+	padding: 0 50px;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -107,10 +109,11 @@ header {
 max-width: var(--ContainerWidth);
 	width: 100%;
 	height: inherit;
+	background-color: var(--main-color);
 }
 
 header .logo a{
-    color: var(--main-color);
+	color: white;
 	text-wrap: nowrap;
     font-size: 30px;
 		font-weight: 600;
@@ -141,7 +144,7 @@ nav ul li {
 }
 
 nav ul li a {
-	color: var(--main-color);
+	color: white;
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
 	font-weight: 600;
@@ -167,7 +170,6 @@ border-radius: var(--border-radius); /* Default border radius */
 		/* background-image: url(../images/airplane.jpg); */
     background-size:cover;
 	width: 100%;
-	height: 637px;
 	background-color: var(--LightGreyHighlight);
  overflow: hidden;
 }
@@ -176,13 +178,15 @@ border-radius: var(--border-radius); /* Default border radius */
 	z-index:999;
 		color: white;
 		text-align: left;
-		line-height: 65px;
+		line-height: 60px;
 		margin-bottom: 40px;
 }
 
 
 .HeroBannerBox p{
 		color: white;
+				line-height: 25px;
+
 }
 
 .innerBanner{
@@ -211,8 +215,6 @@ max-width: var(--ContainerWidth);
 
 .ProjectHolder{
 	background-color: white;
-	 box-shadow: var(--box-shadow);
-	border:  1px solid var(--BorderColor);
 	border-radius: var(--border-radius); 
 	padding: var(--GalleryPadding);
 	max-width: var(--ContainerWidth);
@@ -231,15 +233,12 @@ max-width: var(--ContainerWidth);
 	max-width: var(--ContainerWidth);
 	background: #FFFFFF;
 	border: 1px solid var(--BorderColor);
-	border-top: 0;
 	height: auto;
-	min-height: 100%;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
 	margin: 0 auto;
-	margin-bottom: 5px;
 		 box-shadow: var(--box-shadow);
 }
 
@@ -247,10 +246,11 @@ max-width: var(--ContainerWidth);
 .contentHolderHeader h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
-			font-weight: 500;
+			font-weight: 700;
 	color: var(--favBlue);
 	text-align: left;
-		margin-left: -3px;
+	margin-left: -2px;
+	margin-bottom: .50rem;
 }
 
 .contentHolderHeader p::after {
@@ -265,8 +265,8 @@ max-width: var(--ContainerWidth);
 
 .CardGallery {
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
-	gap: 2rem;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+	gap: 3rem;
 	justify-content: center;
 	width: 100%;
 }
@@ -303,7 +303,9 @@ height: fit-content;
 		font-weight: 700;
 	text-align: left;
 	color: var(--favBlue);
-	line-height: var(--Lineheight);
+	line-height: var(--SecondaryLineHeight);
+	margin-bottom: .50rem;
+	display: inline-block;
 }
 
 /* .Cards h1::after{
@@ -326,6 +328,7 @@ margin-bottom: 5px;
 	text-decoration: none;	
   list-style-type: none;
 }
+
  .CardInfoGridBox ul li {
 color:var(--LightGrey-color);
 	font-family: "Roboto", sans-serif;
@@ -333,7 +336,6 @@ color:var(--LightGrey-color);
 	font-weight: 500;	
 	text-decoration: none;
 	letter-spacing: .25px;
-	line-height: var(--SecondaryLineHeight);
  }
 
 .CardInfoGridBox ul li::before{
