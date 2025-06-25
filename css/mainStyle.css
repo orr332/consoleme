@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 
@@ -20,16 +20,16 @@
 	--image-border-radius:6px;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 84.375rem;
-	--Lineheight: 1.7rem;
+	--Lineheight: 1.6rem;
 	--SecondaryLineHeight: 2.50rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #6a6a6a;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Mulish", sans-serif;
-	--HeaderMain: 3.25rem;
-	--SubHeader: 2rem;
-	--CardHeader: 1.50rem;
+	--HeaderMain: 2.75rem;
+	--SubHeader: 1.75rem;
+	--CardHeader: 1.10rem;
 }
 
 * {
@@ -52,9 +52,13 @@ p, p a{
 	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
 	font-style: normal;
+	font-weight: 400;
 	line-height: var(--Lineheight);
-	overflow-wrap: break-word;
 	color: var(--main-color);
+}
+p a{
+	text-decoration: underline;
+	color: #006699;
 }
 
  .images{
@@ -75,10 +79,8 @@ h1 a,
 h1 {
 	font-family: var(--HeadlineFont);
 	font-size: var(--HeaderMain);
-	font-weight: 400;
 	text-decoration: none;
 	flex-wrap: nowrap;
-	text-align: center;
 }
 
 h1 a:hover {
@@ -144,8 +146,8 @@ nav ul li {
 nav ul li a {
 	color: white;
 	font-family: var(--HeadlineFont);
-	font-size: .9rem;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: 700;
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
@@ -157,7 +159,11 @@ nav ul li a:hover{
 	cursor: pointer;
 border-radius: var(--border-radius); /* Default border radius */
 	background-color:var(--favBlue);
+	color: white;
 	padding: 15px;
+}
+:focus{
+	background-color: #006699;
 }
 /*MAIN MENU*/
 
@@ -167,22 +173,24 @@ border-radius: var(--border-radius); /* Default border radius */
 		/* background-image: url(../images/airplane.jpg); */
     background-size:cover;
 	width: 100%;
+	max-width: var(--ContainerWidth);
 	background-color: var(--LightGreyHighlight);
- overflow: hidden;
+	margin: 0 auto;
+
 }
 
 .HeroBannerBox h1{
 	z-index:999;
 		color: white;
-		text-align: left;
-		line-height: 60px;
+		line-height: 50px;
 		margin-bottom: 40px;
+		font-weight: 300;
 }
 
 
 .HeroBannerBox p{
 		color: white;
-				line-height: 25px;
+				line-height: var(--Lineheight);
 
 }
 
@@ -195,9 +203,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	gap: 2rem;
 		justify-content: space-between;
 	padding: var(--HeroBannerPadding);
-max-width: var(--ContainerWidth);
 	width: 100%;
-	margin: 0 auto;
 }
  
 
@@ -245,11 +251,11 @@ max-width: var(--ContainerWidth);
 .contentHolderHeader h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
-			font-weight: 700;
+			font-weight: 600;
 	color: var(--favBlue);
 	text-align: left;
 	margin-left: -2px;
-margin-bottom: .50rem;
+margin-bottom: .10px;
 }
 
 .contentHolderHeader p::after {
@@ -302,7 +308,7 @@ height: fit-content;
 		font-weight: 700;
 	text-align: left;
 	color: var(--favBlue);
-	line-height: var(--Lineheight);
+line-height: var(--Lineheight);
 }
 
 
@@ -321,7 +327,7 @@ height: fit-content;
 }
 
  .CardInfoGridBox ul li {
-color:var(--LightGrey-color);
+color:#006699;
 	font-family: "Roboto", sans-serif;
 	font-size: .65rem;
 	font-weight: 500;	
@@ -332,7 +338,7 @@ color:var(--LightGrey-color);
 .CardInfoGridBox ul li::before{
   content: '';
 	display: inline-block;
-	background-color: var(--LightGrey-color);
+	background-color: #006699;
 	border-radius: 2px;
 	margin-right: 5px; 
 	width: 10px;
