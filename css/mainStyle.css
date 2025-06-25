@@ -20,15 +20,15 @@
 	--image-border-radius:6px;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 84.375rem;
-	--Lineheight: 1.6rem;
+	--Lineheight: 1.7rem;
 	--SecondaryLineHeight: 2.50rem;
-	--main-color: #1b1b1b;
+	--main-color: #222222;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #6a6a6a;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Mulish", sans-serif;
-	--HeaderMain: 3.5rem;
-	--SubHeader: 2.5rem;
+	--HeaderMain: 3.25rem;
+	--SubHeader: 2rem;
 	--CardHeader: 1.50rem;
 }
 
@@ -46,8 +46,6 @@
 	grid-template-rows: auto 1fr auto;
 	grid-template-columns: minmax(0, 1fr);	
 	min-height: 100vh;
-	 box-shadow: var(--box-shadow);
-	border:  1px solid var(--BorderColor);
 }
 
 p, p a{
@@ -77,7 +75,7 @@ h1 a,
 h1 {
 	font-family: var(--HeadlineFont);
 	font-size: var(--HeaderMain);
-	font-weight: 700;
+	font-weight: 400;
 	text-decoration: none;
 	flex-wrap: nowrap;
 	text-align: center;
@@ -95,21 +93,21 @@ header {
 	position: relative;
 	z-index: 5;
 	width: 100%;
+	max-width: var(--ContainerWidth);
 	height: 75px;
-/* 	border-bottom: 1px solid var(--BorderColor);
-	background-color: white; */
+	border-bottom: 1px solid var(--BorderColor);
+	margin: 0 auto;
 }
 
 .navContainer{
 	padding: 0 50px;
-	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 max-width: var(--ContainerWidth);
 	width: 100%;
 	height: inherit;
-	background-color: var(--main-color);
+	background-color: #006699;
 }
 
 header .logo a{
@@ -146,7 +144,7 @@ nav ul li {
 nav ul li a {
 	color: white;
 	font-family: var(--HeadlineFont);
-	font-size: 1rem;
+	font-size: .9rem;
 	font-weight: 600;
 	align-items: center;
 	text-decoration: none;
@@ -158,8 +156,7 @@ nav ul li a {
 nav ul li a:hover{
 	cursor: pointer;
 border-radius: var(--border-radius); /* Default border radius */
-	background-color:var(--secondary-color);
-	color: var(--LightGreyHighlight);
+	background-color:var(--favBlue);
 	padding: 15px;
 }
 /*MAIN MENU*/
@@ -190,7 +187,9 @@ border-radius: var(--border-radius); /* Default border radius */
 }
 
 .innerBanner{
-	background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699);
+	background-image: url(../images/airplane.jpg);
+	background-size: cover;
+	 background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
 	gap: 2rem;
@@ -250,7 +249,7 @@ max-width: var(--ContainerWidth);
 	color: var(--favBlue);
 	text-align: left;
 	margin-left: -2px;
-	margin-bottom: .50rem;
+margin-bottom: .50rem;
 }
 
 .contentHolderHeader p::after {
@@ -303,17 +302,10 @@ height: fit-content;
 		font-weight: 700;
 	text-align: left;
 	color: var(--favBlue);
-	margin-bottom: 1rem;
-	display: inline-block;
+	line-height: var(--Lineheight);
 }
 
-/* .Cards h1::after{
-	display: block;
-	content: "";
-	border-bottom: 1px solid var(--secondary-color);
-margin-bottom: 5px;
-}
- */
+
 .CardInfoGrid{
 	display: flex;
 	justify-content: space-between;
@@ -331,7 +323,7 @@ margin-bottom: 5px;
  .CardInfoGridBox ul li {
 color:var(--LightGrey-color);
 	font-family: "Roboto", sans-serif;
-	font-size: .70rem;
+	font-size: .65rem;
 	font-weight: 500;	
 	text-decoration: none;
 	line-height: 1rem;
@@ -358,7 +350,7 @@ vertical-align: -1px;
 .button-link {
 	width: 100%;
 	padding: 12px;
-	background: var(--favBlue);
+		background: #006699;
 	color: #ffffff;
 	font-family: var(--HeadlineFont);
     font-size: 1rem;
@@ -375,9 +367,10 @@ vertical-align: -1px;
 }
 
 .HeroBannerBox .button-link:hover, .button-link:hover {
-	background: #006699;
 	cursor: pointer;
 	color: white;
+		background: var(--favBlue);
+
 }
 
 
