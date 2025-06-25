@@ -29,8 +29,8 @@
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Mulish", sans-serif;
 	--HeaderMain: 2.75rem;
-	--SubHeader: 1.75rem;
-	--CardHeader: 1.10rem;
+	--SubHeader: 1.875rem;
+	--CardHeader: 1.25rem;
 }
 
 * {
@@ -308,7 +308,7 @@ height: fit-content;
 		font-weight: 700;
 	text-align: left;
 	color: var(--favBlue);
-line-height: var(--Lineheight);
+	line-height: var(--Lineheight);
 }
 
 
@@ -330,7 +330,7 @@ line-height: var(--Lineheight);
 	color: var(--LightGrey-color);
 	font-family: "Roboto", sans-serif;
 	font-size: .75rem;
-	font-weight: 500;	
+	font-weight: 400;	
 	text-decoration: none;
 	line-height: var(--Lineheight);
  }
