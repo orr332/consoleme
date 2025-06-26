@@ -95,12 +95,11 @@ h1 a:hover {
 
 
 header {
-	position: relative;
 	z-index: 5;
 	width: 100%;
 	max-width: var(--ContainerWidth);
 	height: 75px;
-	border-bottom: 5px solid var(--favBlue);
+	border-bottom: 5px solid var(--main-color);
 }
 
 .navContainer{
@@ -397,17 +396,17 @@ footer {
     left: 0;
     width: 100%;
     z-index: -1;
-    padding: 40px 0px;
-    font-size: 14px;
-    font-weight: 700;
+    padding: var(--GalleryPadding);
+	margin: 0 auto;
 }
 
 
 .footerContainer{
 	width: 100%;
-margin: 0 auto;
-
 }
 
-
-
+.footerContainer p{
+color:white;
+  font-size: 14px;
+    font-weight: 700;
+}
