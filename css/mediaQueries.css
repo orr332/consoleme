@@ -67,7 +67,7 @@ width: 100%;
 		border-radius: 12px;
 		margin: 40 auto;
 		padding: 50px;
-		width: 90%;
+		max-width: 50%;
 	}
 	.CardGallery{
 		display: grid;
