@@ -35,15 +35,16 @@ width: 100%;
 .innerBanner h1{
 	font-family: var(--HeadlineFont);
 	color: white;
-	line-height: 40px;
+	line-height: 35px;
     font-size: 2em;
 	}
 .innerBanner p{
-	font-size: 1rem;
+	font-size: 1.25rem;
 	font-weight: 300;
 }
 .contentHolderHeader h1{
 font-size: 1.5rem;
+text-align: left;
 }
 	.contentHolderHeader p{
 		display: none;
