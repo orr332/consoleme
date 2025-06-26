@@ -354,8 +354,8 @@ vertical-align: -1px;
 .button-link {
 	width: 100%;
 	padding: 12px;
-		background: #006699;
-	color: #ffffff;
+		background:white;
+	color: var(--main-color);
 	font-family: var(--HeadlineFont);
     font-size: 1rem;
 	font-weight: 600;
@@ -364,7 +364,7 @@ vertical-align: -1px;
 	justify-content: center;
 	align-items: center;
 	border-radius: var(--image-border-radius);
-	border: solid 1px var(--LightGreyHighlight);
+	border: solid 1px var(--favBlue);
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
@@ -408,7 +408,7 @@ footer {
 .footerContainer p, .footerContainer ul li{
 color:white;
   font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
   font-family: "Lato", sans-serif;
   list-style: none;
   line-height: var(--Lineheight);
