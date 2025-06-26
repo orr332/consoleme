@@ -26,7 +26,7 @@
 .innerBanner{
 display: flex;
 flex-direction: column;
-padding: 100px;
+padding: 40px;
 width: 100%;
 }
 .HeroBanner{
@@ -42,7 +42,10 @@ width: 100%;
 	font-size: .80rem;
 	font-weight: 300;
 }
-	
+	.contentHolderHeader p{
+		display: none;
+	}
+
 	.Cards h1{
 		font-size: 1.0em;
 	}
