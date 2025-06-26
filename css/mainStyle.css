@@ -28,7 +28,7 @@
 	--LightGrey-color: #767676;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Mulish", sans-serif;
-	--HeaderMain: 2.75rem;
+	--HeaderMain:2.75rem;
 	--SubHeader: 1.875rem;
 	--CardHeader: 1.25rem;
 }
@@ -164,9 +164,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	color: white;
 	padding: 15px;
 }
-:focus{
-	background-color: #006699;
-}
+
 /*MAIN MENU*/
 
 
@@ -271,7 +269,7 @@ border-radius: var(--border-radius); /* Default border radius */
 .CardGallery {
 	display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-	gap: 1.50rem;
+	gap: 2rem;
 	justify-content: center;
 	width: 100%;
 }
@@ -305,7 +303,7 @@ height: fit-content;
 .Cards h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
-		font-weight: 700;
+			font-weight: 600;
 	text-align: left;
 	color: var(--favBlue);
 	line-height: var(--Lineheight);
@@ -360,7 +358,7 @@ vertical-align: -1px;
 	color: #ffffff;
 	font-family: var(--HeadlineFont);
     font-size: 1rem;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;

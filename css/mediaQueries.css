@@ -35,12 +35,13 @@ width: 100%;
 .innerBanner h1{
 	font-family: var(--HeadlineFont);
 	color: white;
-	font-weight: 800;
-    font-size: 2.5em;
-		letter-spacing: -.02em;
-		margin-top: 20px;
+	line-height: 40px;
+    font-size: 2em;
 	}
-
+.innerBanner p{
+	font-size: .80rem;
+	font-weight: 300;
+}
 	
 	.Cards h1{
 		font-size: 1.0em;
