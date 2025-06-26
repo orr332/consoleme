@@ -42,6 +42,9 @@ width: 100%;
 	font-size: .80rem;
 	font-weight: 300;
 }
+.contentHolderHeader h1{
+font-size: 1.5rem;
+}
 	.contentHolderHeader p{
 		display: none;
 	}
@@ -49,9 +52,7 @@ width: 100%;
 	.Cards h1{
 		font-size: 1.0em;
 	}
-	.Cards{
 
-	}
 .button-link{
 	width: 100%;
 }
