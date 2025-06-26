@@ -256,6 +256,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	line-height: var(--SecondaryLineHeight);
 }
 
+
 .contentHolderHeader p::after {
 	display: block;
 	content: '';
@@ -353,6 +354,7 @@ vertical-align: -1px;
 
 .button-link {
 	width: 100%;
+	max-width: fit-content;
 	padding: 12px;
 		background: #006699;
 	color: #ffffff;
@@ -379,9 +381,8 @@ vertical-align: -1px;
 
 
 .HeroBannerBox .button-link{
-	
+	max-width: fit-content;
 	color:var(--main-color);
-		width: 25%;
 		background: white;
 	border-radius: var(--image-border-radius);
 }
