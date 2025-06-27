@@ -35,8 +35,8 @@ width: 100%;
 .innerBanner h1{
 	font-family: var(--HeadlineFont);
 	color: white;
-	line-height: 35px;
-    font-size: 2em;
+	line-height: 40px;
+    font-size: 1.75em;
 	}
 .innerBanner p{
 	font-size: 1.25rem;
@@ -95,11 +95,8 @@ gap: 2rem;
 
 	@media (max-width: 720px) {
 			.logo {
-		top: 0;
-		left: 0;
 		z-index: 999;
 		font-weight: 500;
-		margin-left: 20px;
 	}
 .HeroBannerBox p{
 	display: none;
