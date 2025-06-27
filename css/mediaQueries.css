@@ -32,13 +32,13 @@ width: 100%;
 .HeroBanner{
 		flex-direction: column;
 }
-.innerBanner h1{
+.HeroBannerBox h1{
 	font-family: var(--HeadlineFont);
 	color: white;
 	line-height: 40px;
     font-size: 1.75em;
 	}
-.innerBanner p{
+.HeroBannerBox p{
 	font-size: 1.25rem;
 	font-weight: 300;
 }
