@@ -101,7 +101,9 @@ gap: 2rem;
 		font-weight: 500;
 		margin-left: 20px;
 	}
-
+.HeroBannerBox p{
+	display: none;
+}
 		.ProjectHolder{
 
 		}
