@@ -184,7 +184,7 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox h1 {
 	z-index: 999;
 	color: white;
-	line-height: 60px;
+	line-height: 50px;
 	margin-bottom: 20px;
 	font-weight: 500;
 }
