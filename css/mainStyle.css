@@ -28,9 +28,9 @@
 	--LightGrey-color: #767676;
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Inter", sans-serif;
-	--HeaderMain:2.75em;
+	--HeaderMain:2.25em;
 	--SubHeader: 1.75em;
-	--CardHeader: 1.25em;
+	--CardHeader: 1.15em;
 }
 
 * {
@@ -73,7 +73,7 @@ p a{
 	border: var(--BorderColor);
 	width: 100%;
 	height: auto;
-	margin: 20px 0 20px 0;
+	margin: 10px 0 20px 0;
 }
 	
 
@@ -184,9 +184,9 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox h1 {
 	z-index: 999;
 	color: white;
-	line-height: 52px;
+	font-weight: 700;
+	line-height: 45px;
 	margin-bottom: 30px;
-	font-weight: 600;
 }
 
 .HeroBannerBox p {
@@ -367,7 +367,7 @@ vertical-align: -1px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: var(--image-border-radius);
+	border-radius: var(--border-radius);
 	background-color: white;
 	border: solid 1px var(--BorderColor);
 	-webkit-transition-duration: 0.5s;
@@ -387,7 +387,7 @@ vertical-align: -1px;
 	max-width: fit-content;
 	color:var(--main-color);
 		background: white;
-	border-radius: var(--image-border-radius);
+	border-radius: var(--border-radius);
 }
 
 
