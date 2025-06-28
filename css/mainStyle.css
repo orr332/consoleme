@@ -2,7 +2,7 @@
 /* CSS Document */
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 
@@ -27,7 +27,7 @@
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #767676;
 	--CardColor: #F3F4F5;
---HeadlineFont:  "Raleway", sans-serif;
+--HeadlineFont:  "Inter", sans-serif;
 	--HeaderMain:2.75em;
 	--SubHeader: 1.75em;
 	--CardHeader: 1.25em;
@@ -57,9 +57,9 @@
 
 
 p, p a{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  	font-size: 1rem;
+  	font-size: .938em;
 	line-height: var(--Lineheight);
 	color: var(--main-color);
 }
@@ -151,7 +151,7 @@ nav ul li a {
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 500;
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
@@ -184,9 +184,9 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox h1 {
 	z-index: 999;
 	color: white;
-	line-height: 50px;
-	margin-bottom: 20px;
-	font-weight: 500;
+	line-height: 52px;
+	margin-bottom: 30px;
+	font-weight: 600;
 }
 
 .HeroBannerBox p {
@@ -257,7 +257,6 @@ border-radius: var(--border-radius); /* Default border radius */
 	text-align: left;
 	display: block;
 	margin-left: -1px;
-	margin-top: -.50em;
 	line-height: var(--Lineheight);
 }
 
@@ -309,7 +308,7 @@ height: fit-content;
 .Cards h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
-			font-weight: 600;
+			font-weight: bold;
 	text-align: left;
 	color: var(--favBlue);
 	line-height: var(--Lineheight);
