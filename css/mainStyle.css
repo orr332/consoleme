@@ -1,36 +1,36 @@
 @charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 
 
 :root {
 	/* --BorderColor: #e2e2e3; */
 	/* --BorderColor: #c5c5c5; */
-	--BorderColor: #c6c6c6;
+	--BorderColor: #d4d4d4;
 	--background-color: #fafafa;
 	--favBlue:#2F373D;
 	/* --favBlue:#1d2834;*/
 	/* --LightGreyHighlight: #f4f2ee; */
-	--box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
-	--GalleryPadding: 60px;
+ --box-shadow:0px 5px 10px -5px rgb(12 113 195 / 16%);
+	--GalleryPadding: 5rem;
 	--HeroBannerPadding:100px;
 	--ProjectHolderMargins:50px;
-	--border-radius: 30px;
-	--image-border-radius: 15px;
+	--border-radius: 24px;
+	--image-border-radius: 12px;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 90rem;
-	--Lineheight: 1.5;
+	--Lineheight: 1.45;
 	--SecondaryLineHeight: 2;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
-	--LightGrey-color: #767676;
+	--LightGrey-color: #848484;
 	--CardColor: #F3F4F5;
---HeadlineFont:   "Work Sans", sans-serif;
+--HeadlineFont:  "Manrope", sans-serif;
 	--HeaderMain:2.75em;
-	--SubHeader: 2em;
-	--CardHeader: 1.1em;
+	--SubHeader: 2.25em;
+	--CardHeader: 1.2em;
 }
 
 * {
@@ -52,16 +52,15 @@
 	max-width: var(--ContainerWidth);
 	box-shadow: var(--box-shadow);
 		border: 1px solid var(--BorderColor);
-		border-top: none;
 }
 
 
 p, p a{
-  font-family: "Lato", sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   	font-size: 1em;
 	line-height: var(--Lineheight);
-	color: var(--main-color);
+	color: black;
 }
 p a{
 	text-decoration: underline;
@@ -79,7 +78,7 @@ p a{
 
 html{
 	overflow-x: hidden;
-background-color: var(--secondary-color); 
+background-color:var(--secondary-color);
 }
 
 h1 a,
@@ -103,7 +102,7 @@ header {
 	width: 100%;
 	max-width: inherit;
 	height: 75px;
-	/* border-bottom: 1px solid #e2e2e2; */
+	border-bottom: 1px solid #e2e2e2; 
 background-color: white;
 box-shadow: var(--box-shadow);
 }
@@ -153,7 +152,7 @@ nav ul li a {
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 700;
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
@@ -177,16 +176,13 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBanner {
 	width: 100%;
 		/* background-image: url(../images/airplane.jpg); */
-    background-size:cover;
 	max-width: var(--ContainerWidth);
-	background-color: var(--LightGreyHighlight);
-
 }
 
 .HeroBannerBox h1 {
 	z-index: 999;
 	color: white;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 55px;
 	margin-bottom: 30px;
 }
@@ -194,31 +190,35 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox p {
 	color: white;
 	line-height: var(--Lineheight);
-	margin-bottom: 30px;
 	font-weight: 400;
+	margin-bottom: 30px;
 }
 .innerBanner{
 	background-color: var(--main-color);
 	/* background-image: url(../images/airplane.jpg); */
 	background-size: cover;
-	 background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699);
+	 /* background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699); */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
 	gap: 2em;
 		justify-content: space-between;
 	padding: var(--GalleryPadding);
-	width: 100%;
+	width: inherit;
 }
  
 
 
 .HeroBannerBox{
 	width: 100%;
+	position: relative;
 }
 
 .HeroBannerBox img{
 	border-radius: var(--border-radius);
 	width: 100%;
+}
+#About p{
+	line-height: 1.75rem;
 }
 
 .ProjectHolder{
@@ -255,12 +255,12 @@ border-radius: var(--border-radius); /* Default border radius */
 .contentHolderHeader h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
-	font-weight: 600;
+	font-weight: 700;
 	color: var(--favBlue);
 	text-align: left;
 	display: block;
 	margin-left: -1px;
-	line-height: var(--Lineheight);
+	margin-top: -1rem;
 }
 
 
@@ -276,8 +276,8 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .CardGallery {
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-	gap: 3rem; 
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+	gap: 2rem; 
 	justify-content: center;
 	width: 100%;
 }
@@ -286,9 +286,9 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 .Cards {
 	display: flex;
 	flex-direction: column;
-	background-color: white;
+	position: relative;
 	border-radius: var(--border-radius);
-	border: var(--BorderColor) 1px solid;
+	border: var(--secondary-color) 4px solid;
 	box-shadow: var(--boxShadow);
 	  box-sizing: border-box;
 height: fit-content;
@@ -304,18 +304,19 @@ height: fit-content;
   	object-fit: cover;
 	overflow: auto;
 	background-size: cover;
+	z-index: 1;
 }
 
 .CardInfo{
-	padding:1.50rem ;
+	padding:1.5rem ;
 }
 
 .Cards h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
-			font-weight: 600;
+	font-weight: 700;
 	text-align: left;
-	color: var(--favBlue);
+	color: #000;
 	line-height: var(--Lineheight);
 }
 
@@ -364,16 +365,16 @@ vertical-align: -1px;
 .button-link {
 	width: 100%;
 	padding: 15px;
-	color:#000;
+	color: black;
 	font-family: var(--HeadlineFont);
     font-size: 1rem;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: white;
-	border-top: solid 1px var(--BorderColor);
+	background-color: var(--secondary-color);
+	border-top: solid 1px var(--secondary-color);
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
