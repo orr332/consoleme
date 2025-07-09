@@ -2,6 +2,7 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
 
@@ -14,23 +15,22 @@
 	/* --favBlue:#1d2834;*/
 	/* --LightGreyHighlight: #f4f2ee; */
  --box-shadow:0px 5px 10px -5px rgb(12 113 195 / 16%);
-	--GalleryPadding: 5rem;
-	--HeroBannerPadding:100px;
-	--ProjectHolderMargins:50px;
-	--border-radius: 24px;
+	--GalleryPadding: 4.5rem;
+	--CardsPadding:1.25rem;
+	--border-radius: 1.5rem;
 	--image-border-radius: 12px;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 90rem;
-	--Lineheight: 1.45;
-	--SecondaryLineHeight: 2;
+	--Lineheight: 1.5rem;
+	--SecondaryLineHeight: 3rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #848484;
 	--CardColor: #F3F4F5;
---HeadlineFont:  "Manrope", sans-serif;
-	--HeaderMain:3em;
-	--SubHeader: 2em;
-	--CardHeader: 1.25em;
+--HeadlineFont: "Inter", sans-serif;
+	--HeaderMain:3.5rem;
+	--SubHeader: 2.5rem;
+	--CardHeader:1.5rem;
 }
 
 * {
@@ -58,7 +58,8 @@
 p, p a{
   font-family: "Inter", sans-serif;
   font-style: normal;
-  	font-size: .90em;
+  font-weight: 400;
+  	font-size:1rem;
 	line-height: var(--Lineheight);
 	color: black;
 }
@@ -141,7 +142,6 @@ nav ul {
 	align-items: center;
 	justify-content: center;
 	gap: 1rem;
-
 }
 
 nav ul li {
@@ -152,11 +152,12 @@ nav ul li a {
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
-	font-weight: 700;
+	letter-spacing: .2px;
+	font-weight: 500;
 	align-items: center;
 	text-decoration: none;
 	height: 75px;
-	padding: 15px;
+	padding: 10px;
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
@@ -167,7 +168,7 @@ nav ul li a:hover{
 border-radius: var(--border-radius); /* Default border radius */
 	background-color:var(--favBlue);
 	color: white;
-	padding: 15px;
+	padding: 10px;
 }
 
 /*MAIN MENU*/
@@ -182,9 +183,9 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox h1 {
 	z-index: 999;
 	color: white;
-	font-weight: 600;
-	line-height: 55px;
+	font-weight: 500;
 	margin-bottom: 30px;
+	line-height: 70px;
 }
 
 .HeroBannerBox p {
@@ -193,6 +194,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	font-weight: 400;
 	margin-bottom: 30px;
 }
+
 .innerBanner{
 	background-color: var(--main-color);
 	/* background-image: url(../images/airplane.jpg); */
@@ -200,7 +202,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	 /* background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699); */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
-	gap: 3em;
+	gap: 4em;
 		justify-content: space-between;
 	padding: var(--GalleryPadding);
 	width: inherit;
@@ -255,12 +257,13 @@ border-radius: var(--border-radius); /* Default border radius */
 .contentHolderHeader h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
-	font-weight: 600;
+	font-weight: 700;
 	color: var(--favBlue);
 	text-align: left;
 	display: block;
 	margin-left: -1px;
-	margin-top: -1rem;
+	line-height: var(--SecondaryLineHeight);
+	margin-bottom: 10px;
 }
 
 
@@ -276,7 +279,7 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .CardGallery {
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+grid-template-columns: repeat(auto-fit, minmax(410px, 1fr)); 
 	gap: 2rem; 
 	justify-content: center;
 	width: 100%;
@@ -288,7 +291,7 @@ grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 	flex-direction: column;
 	position: relative;
 	border-radius: var(--border-radius);
-	border: var(--secondary-color) 4px solid;
+	border: var(--secondary-color) 1px solid;
 	box-shadow: var(--boxShadow);
 	  box-sizing: border-box;
 height: fit-content;
@@ -308,16 +311,16 @@ height: fit-content;
 }
 
 .CardInfo{
-	padding:1.5rem ;
+	padding: var(--CardsPadding);
 }
 
 .Cards h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
-	font-weight: 600;
+	font-weight: 700;
 	text-align: left;
 	color: #000;
-	line-height: var(--Lineheight);
+	line-height: var(--SecondaryLineHeight);
 }
 
 
@@ -364,12 +367,11 @@ vertical-align: -1px;
 
 .button-link {
 	width: 100%;
-	padding: 15px;
-	color: black;
+	padding: var(--CardsPadding);
+	color: var(--main-color);
 	font-family: var(--HeadlineFont);
-    font-size: 1rem;
+    font-size: 1.15rem;
 	font-weight: 700;
-	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
