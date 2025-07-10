@@ -16,7 +16,7 @@
 	/* --LightGreyHighlight: #f4f2ee; */
  --box-shadow:0px 5px 10px -5px rgb(12 113 195 / 16%);
 	--GalleryPadding: 4.5rem;
-	--CardsPadding:1.25rem;
+	--CardsPadding:1.50rem;
 	--border-radius: 1.5rem;
 	--image-border-radius: 12px;
 	--HeroBannerWidth: 120rem;
@@ -102,7 +102,7 @@ header {
 	z-index: 5;
 	width: 100%;
 	max-width: inherit;
-	height: 75px;
+	height: 80px;
 	border-bottom: 1px solid #e2e2e2; 
 background-color: white;
 box-shadow: var(--box-shadow);
@@ -156,7 +156,7 @@ nav ul li a {
 	font-weight: 500;
 	align-items: center;
 	text-decoration: none;
-	height: 75px;
+	height: 80px;
 	padding: 10px;
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
@@ -185,7 +185,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	color: white;
 	font-weight: 500;
 	margin-bottom: 30px;
-	line-height: 70px;
+	line-height: 75px;
 }
 
 .HeroBannerBox p {
