@@ -28,7 +28,7 @@
 	--LightGrey-color: #848484;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Inter", sans-serif;
-	--HeaderMain:3.5rem;
+	--HeaderMain:4rem;
 	--SubHeader: 2.5rem;
 	--CardHeader:1.5rem;
 }
@@ -185,7 +185,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	color: white;
 	font-weight: 500;
 	margin-bottom: 30px;
-	line-height: 75px;
+	line-height: 80px;
 }
 
 .HeroBannerBox p {
