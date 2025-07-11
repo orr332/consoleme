@@ -92,6 +92,9 @@ grid-template-columns: repeat(2, 1fr);
 margin: 0 auto;
 gap: 2rem;
 	}
+ .ContentHolder{
+padding: 30px;	
+}
 
 	@media (max-width: 720px) {
 			.logo {
