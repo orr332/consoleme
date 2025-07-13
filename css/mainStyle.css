@@ -184,14 +184,15 @@ border-radius: var(--border-radius); /* Default border radius */
 	color:white;
 	font-weight: 400;
 	margin-bottom: 30px;
-	line-height: 90px;
+	line-height: calc(var(--SecondaryLineHeight) + 2.25rem);
 }
 
 .HeroBannerBox p {
 	color:white;
-	line-height: var(--Lineheight);
+	line-height: 2.25rem;
 	font-weight: 400;
 	margin-bottom: 50px;
+	font-size: 1.25rem;
 }
 
 .innerBanner{
@@ -279,7 +280,7 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .CardGallery {
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(410px, 1fr)); 
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
 	gap: 2rem; 
 	justify-content: center;
 	width: 100%;
@@ -328,6 +329,8 @@ height: fit-content;
 
 .Cards h1 a:hover{
 	color: #006699;
+			transition-duration: 0.5s;
+
 }
 
 .CardInfoGrid{
@@ -374,7 +377,8 @@ vertical-align: -1px;
 .button-link {
 	width: 100%;
 	padding: var(--CardsPadding);
-	color: var(--main-color);
+	background-color: var(--secondary-color);
+	color: black;
 	font-family: var(--HeadlineFont);
     font-size: 16px;
 	font-weight: 500;
