@@ -14,7 +14,7 @@
 	/* --favBlue:#2F373D; */
 	--favBlue:#1d2834;
 	/* --LightGreyHighlight: #f4f2ee; */
- --box-shadow: rgba(50, 50, 93, 0.25) 0px 1px 2px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
 	--GalleryPadding: 4.5rem;
 	--CardsPadding:1.50rem;
 	--border-radius: 1rem;
@@ -25,7 +25,7 @@
 	--SecondaryLineHeight: 3rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
-	--LightGrey-color: #b1b1b1;
+	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Inter", sans-serif;
 	--HeaderMain:4rem;
@@ -382,10 +382,12 @@ vertical-align: -1px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-top: solid 1px var(--LightGrey-color);
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
+}
+.Cards .button-link{
+	border-top: 1px solid var(--LightGrey-color);
 }
 
 .HeroBannerBox .button-link:hover, .button-link:hover {
@@ -402,7 +404,6 @@ vertical-align: -1px;
 		background:white;
 	border-radius: 25px;
 	padding: 16px 32px 16px 32px;
-		border: var(--LightGrey-color) 1px solid;
 }
 
 
