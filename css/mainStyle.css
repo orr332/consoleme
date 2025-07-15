@@ -50,7 +50,6 @@
 	margin: 0 auto;
 	width: 100%;
 	box-shadow: var(--box-shadow);
-	max-width: var(--ContainerWidth);
 		border: 1px solid var(--BorderColor);
 }
 
@@ -106,13 +105,13 @@ header {
 background-color: white;
 }
 
+
 .navContainer{
-	padding: 0 50px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-max-width: inherit;
-	width: 100%;
+	max-width: var(--HeroBannerWidth);
+	margin: 0 auto;
 	height: inherit;
 }
 
@@ -175,8 +174,8 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .HeroBanner {
 	width: 100%;
-		/* background-image: url(../images/airplane.jpg); */
-	max-width: var(--ContainerWidth);
+	background-size: cover;
+	background-color:var(--main-color);
 }
 
 .HeroBannerBox h1 {
@@ -184,7 +183,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	color:white;
 	font-weight: 400;
 	margin-bottom: 30px;
-	line-height: calc(var(--SecondaryLineHeight) + 2.25rem);
+	line-height: calc(var(--SecondaryLineHeight) + 3rem);
 }
 
 .HeroBannerBox p {
@@ -196,9 +195,8 @@ border-radius: var(--border-radius); /* Default border radius */
 }
 
 .innerBanner{
-	/* background-image: url(../images/airplane.jpg); */
-	background-size: cover;
-	background-color:var(--main-color);
+	margin: 0 auto;
+	max-width: var(--HeroBannerWidth);
 	 /* background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699); */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
@@ -239,18 +237,18 @@ border-radius: var(--border-radius); /* Default border radius */
 
 
  .ContentHolder{
+	margin: 0 auto;
 	width: 100%;
 	padding: var(--GalleryPadding);
-	max-width: var(--ContainerWidth);
+	max-width: var(--HeroBannerWidth);
 	background: #FFFFFF;
-	/* border: 1px solid var(--BorderColor); */
+border: 1px solid var(--BorderColor);
 	border-top: none;
 	height: auto;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	overflow: hidden;
-		 /* box-shadow: var(--box-shadow); */
 }
 
 
@@ -280,8 +278,8 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .CardGallery {
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-	gap: 2rem; 
+grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+	gap: 3rem; 
 	justify-content: center;
 	width: 100%;
 }
@@ -380,7 +378,6 @@ vertical-align: -1px;
 	background-color: var(--secondary-color);
 	color: black;
 	font-family: var(--HeadlineFont);
-    font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
 	display: flex;
@@ -412,7 +409,6 @@ vertical-align: -1px;
 
 
 footer {
-	max-width: var(--ContainerWidth);
 	height: 150px;
 	background: var(--favBlue);
     color: white;
