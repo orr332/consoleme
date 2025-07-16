@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
@@ -21,7 +20,7 @@
 	--image-border-radius: .5rem;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 90rem;
-	--Lineheight: 1.5rem;
+	--Lineheight: 1.6rem;
 	--SecondaryLineHeight: 3rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
@@ -51,6 +50,7 @@
 	width: 100%;
 	box-shadow: var(--box-shadow);
 		border: 1px solid var(--BorderColor);
+		border-top: none;
 }
 
 
@@ -78,7 +78,6 @@ p a{
 
 html{
 	overflow-x: hidden;
-background-color:var(--secondary-color);
 }
 
 h1 {
@@ -103,6 +102,8 @@ header {
 	height: 80px;
 	border-bottom: 1px solid #e2e2e2; 
 background-color: white;
+margin-bottom: 4.5rem;
+box-shadow: var(--box-shadow);
 }
 
 
@@ -113,11 +114,13 @@ background-color: white;
 	max-width: var(--HeroBannerWidth);
 	margin: 0 auto;
 	height: inherit;
+	padding: 0 4.5rem;
 }
 
 header .logo a{
 	color: var(--main-color);
 	text-wrap: nowrap;
+	text-transform: uppercase;
     font-size: 30px;
 		font-weight: 600;
 	display: flex;
@@ -175,7 +178,6 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBanner {
 	width: 100%;
 	background-size: cover;
-	background-color:var(--main-color);
 }
 
 .HeroBannerBox h1 {
@@ -195,7 +197,9 @@ border-radius: var(--border-radius); /* Default border radius */
 }
 
 .innerBanner{
+		background-color:var(--main-color);
 	margin: 0 auto;
+	border-radius: var(--border-radius);
 	max-width: var(--HeroBannerWidth);
 	 /* background: linear-gradient(to right top, #051937, #0a2a4e, #0d3d67, #0b5180, #006699); */
 	display: grid;
@@ -241,8 +245,8 @@ border-radius: var(--border-radius); /* Default border radius */
 	width: 100%;
 	padding: var(--GalleryPadding);
 	max-width: var(--HeroBannerWidth);
-	background: #FFFFFF;
-border: 1px solid var(--BorderColor);
+/* 	background: #FFFFFF;
+border: 1px solid var(--BorderColor); */
 	border-top: none;
 	height: auto;
 	display:flex;
@@ -424,6 +428,7 @@ footer {
 
 .footerContainer{
 	width: 100%;
+	max-width: var(--HeroBannerWidth);
 }
 
 .footerContainer p, .footerContainer ul li{

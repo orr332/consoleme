@@ -1,13 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@media (max-width:1800px) {
-	.logo{
-		padding-left: 20px;
-	}
-	
-}
-
 
 @media (max-width: 1390px) {
 	.logo {
