@@ -4,7 +4,6 @@
 
 @media (max-width: 1390px) {
 	.logo {
-	padding-left: 20px;
 		z-index: 999;
 		font-weight: 500;
 	}
@@ -28,6 +27,7 @@ width: 100%;
 }
 .HeroBanner{
 		flex-direction: column;
+		padding: 0 2rem;
 }
 .HeroBannerBox h1{
 	font-family: var(--HeadlineFont);
@@ -38,6 +38,9 @@ width: 100%;
 .HeroBannerBox p{
 	font-size: 1.25rem;
 	font-weight: 300;
+}
+.ContentHolder{
+		padding: 0 2rem;
 }
 .contentHolderHeader h1{
 font-size: 1.5rem;
