@@ -181,10 +181,8 @@ border-radius: var(--border-radius); /* Default border radius */
 
 
 .HeroBanner {
-	width: 95%;
-	max-width: var(--HeroBannerWidth);
+	width: 100%;
 	margin: 0 auto;
-	background-size: cover;
 	position: relative;
 }
 
