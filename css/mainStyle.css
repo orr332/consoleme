@@ -14,21 +14,21 @@
 	/* --favBlue:#1d2834; */
 	/* --LightGreyHighlight: #f4f2ee; */
  --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
-	--GalleryPadding: 3.5rem;
+	--GalleryPadding: 3rem;
 	--CardsPadding:1.5rem;
 	--border-radius: 1rem;
 	--image-border-radius: .5rem;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 90rem;
-	--Lineheight: 1.5rem;
-	--SecondaryLineHeight: 3rem;
+	--Lineheight: 1.6rem;
+	--SecondaryLineHeight: 3.5rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "Nunito Sans", sans-serif;
-	--HeaderMain:4rem;
-	--SubHeader: 3rem;
+	--HeaderMain:3.5rem;
+	--SubHeader: 2.5rem;
 	--CardHeader:1.5rem;
 }
 
@@ -68,6 +68,9 @@ p a{
 	text-decoration: underline;
 	color: #006699;
 }
+.contentHolderHeader h1, .contentHolderHeader p, .Cards{
+	text-align: center;
+}
 
  .images{
 	border-radius: var(--border-radius);
@@ -80,6 +83,7 @@ p a{
 
 html{
 	overflow-x: hidden;
+	 scroll-padding-top: 4.5rem;
 }
 
 h1 {
@@ -97,14 +101,16 @@ h1 a:hover {
 
 
 header {
-	z-index: 5;
+	z-index: 1000;
 	width: 100%;
 	max-width: inherit;
 	height: 5.5rem;
 	border-bottom: 1px solid var(--LightGrey-color); 
 background-color: white;
-margin-bottom: 4.5rem;
 box-shadow: var(--box-shadow);
+position:sticky;
+top: 0;
+margin-bottom: 5rem;
 }
 
 
@@ -122,7 +128,7 @@ header .logo a{
 	color: var(--main-color);
 	text-wrap: nowrap;
     font-size: 2rem;
-		font-weight: 600;
+		font-weight: 700;
 	display: flex;
 	font-family: var(--HeadlineFont);
 	font-style: normal;
@@ -153,7 +159,7 @@ nav ul li a {
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
 	letter-spacing: .2px;
-	font-weight: 600;
+	font-weight: 700;
 	align-items: center;
 	text-decoration: none;
 	height: 80px;
@@ -175,35 +181,35 @@ border-radius: var(--border-radius); /* Default border radius */
 
 
 .HeroBanner {
-	width: 100%;
+	width: 95%;
+	max-width: var(--HeroBannerWidth);
+	margin: 0 auto;
 	background-size: cover;
+	position: relative;
 }
 
 .HeroBannerBox h1 {
-	color: white;
 	z-index: 999;
-	font-weight: 600;
+	font-weight: 800;
 	margin-bottom: 30px;
 	line-height: 5rem;
 }
 
 .HeroBannerBox p {
-	color: white;
-	line-height: 2.5rem;
-	font-weight: 300;
+	line-height: 2rem;
+	font-weight: 400;
 	margin-bottom: 50px;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 .innerBanner{
-		box-shadow: var(--box-shadow);
-		background-color: var(--main-color);
+		background-color: var(--secondary-color);
   margin: 0 auto;
 	border-radius: var(--border-radius);
 	max-width: var(--HeroBannerWidth);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
-	gap: 4em;
+	gap: 2em;
 		justify-content: space-between;
 	padding: var(--GalleryPadding);
 	width: inherit;
@@ -220,13 +226,11 @@ border-radius: var(--border-radius); /* Default border radius */
 	border-radius: var(--border-radius);
 	width: 100%;
 }
-#About p{
-	line-height: 1.75rem;
-}
 
 .ProjectHolder{
 	background-color: white;
 	border-radius: var(--border-radius); 
+	border: 1px solid var(--BorderColor);
 	padding: var(--GalleryPadding);
 	max-width: var(--ContainerWidth);
 	width: 100%;
@@ -244,9 +248,6 @@ border-radius: var(--border-radius); /* Default border radius */
 	width: 100%;
 	padding: var(--GalleryPadding);
 	max-width: var(--HeroBannerWidth);
-/* 	background: #FFFFFF;
-border: 1px solid var(--BorderColor); */
-	border-top: none;
 	height: auto;
 	display:flex;
 	flex-direction: column;
@@ -258,17 +259,14 @@ border: 1px solid var(--BorderColor); */
 .contentHolderHeader h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
-	font-weight: 600;
+	font-weight: 800;
 	color: var(--favBlue);
-	text-align: center;
 	display: block;
 	margin-left: -3px;
-	line-height: var(--SecondaryLineHeight);
+	line-height: calc(var(--SecondaryLineHeight) + 1rem);
 	margin-bottom: 10px;
 }
-.contentHolderHeader p{
-	text-align: center;
-}
+
 .contentHolderHeader p::after {
 	display: block;
 	content: '';
@@ -281,7 +279,7 @@ border: 1px solid var(--BorderColor); */
 
 .CardGallery {
 	display: grid;
-grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
+grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); 
 	gap: 3rem; 
 	justify-content: center;
 	width: 100%;
@@ -317,9 +315,8 @@ height: fit-content;
 .Cards h1{
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
-	font-weight: 600;
+	font-weight: 800;
 	margin-top: -10px;
-	text-align: center;	
 	color: #000;
 	line-height: var(--SecondaryLineHeight);
 }
@@ -332,6 +329,7 @@ height: fit-content;
 			transition-duration: 0.5s;
 
 }
+
 
 .CardInfoGrid{
 	display: flex;
@@ -380,7 +378,8 @@ vertical-align: -1px;
 	color: black;
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 800;
+	letter-spacing: .5px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -407,28 +406,28 @@ vertical-align: -1px;
 	color:white;
 		background:#006699;
 	border-radius: 25px;
-	padding: 10px 20px 10px 20px;
+	padding: 12px 24px;
 }
 
 
 footer {
-	height: 150px;
+	height: 275px;
 	background: var(--favBlue);
     color: white;
 	border-top: #006699 2px solid;
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
-    padding: var(--GalleryPadding);
+    z-index: -100;
 	margin: 0 auto;
-
+	position: relative;
 }
 
 
 .footerContainer{
 	width: 100%;
 	max-width: var(--HeroBannerWidth);
+    padding: var(--GalleryPadding);
 }
 
 .footerContainer p, .footerContainer ul li{

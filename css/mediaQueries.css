@@ -22,7 +22,7 @@
 .innerBanner{
 display: flex;
 flex-direction: column;
-padding: 1rem;
+padding: 50px;
 width: 100%;
 }
 .HeroBanner{
