@@ -115,7 +115,14 @@ padding: 30px;
 				width: 100%;
 
 	}
+	.HeroBannerBox h1{
+font-size: 1rem;	
+}
+.innerBanner{
+	padding: 1rem;
+}
 	.HeroBannerBox p{
 		display: none;
 	}
+
 }
