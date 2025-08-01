@@ -16,8 +16,8 @@
  --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
 	--GalleryPadding: 3rem;
 	--CardsPadding:1.5rem;
-	--border-radius: 1rem;
-	--image-border-radius: .5rem;
+	--border-radius: 12px;
+	--image-border-radius: 6px;
 	--HeroBannerWidth: 120rem;
 	--ContainerWidth: 90rem;
 	--Lineheight: 1.6rem;
@@ -27,8 +27,8 @@
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont: "DM Sans", sans-serif;
-	--HeaderMain:3.25rem;
-	--SubHeader: 2.25rem;
+	--HeaderMain:3.5rem;
+	--SubHeader: 2.5rem;
 	--CardHeader:1.5rem;
 }
 
@@ -68,9 +68,7 @@ p a{
 	text-decoration: underline;
 	color: #006699;
 }
-.contentHolderHeader h1, .contentHolderHeader p, .Cards{
-	text-align: center;
-}
+
 
  .images{
 	border-radius: var(--border-radius);
@@ -158,7 +156,7 @@ nav ul li a {
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
 	letter-spacing: .2px;
-	font-weight: 700;
+	font-weight: 600;
 	align-items: center;
 	text-decoration: none;
 	height: 80px;
@@ -188,27 +186,29 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox h1 {
 	z-index: 999;
 	font-weight: 700;
-	margin-bottom: 30px;
-	line-height: 5rem;
+	margin-bottom: 1.5rem;
+	line-height: 4.5rem;
 }
 
 .HeroBannerBox p {
 	line-height: 2rem;
 	font-weight: 400;
-	margin-bottom: 50px;
+	margin-bottom: 1.5rem;
 	font-size: 1.25rem;
 }
 
 .innerBanner{
-		background-color: var(--secondary-color);
+		/* background-color: var(--secondary-color); */
   margin: 0 auto;
+  background-color: var(--secondary-color);
+  padding: var(--GalleryPadding);
 	border-radius: var(--border-radius);
 	max-width: var(--HeroBannerWidth);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
 	gap: 2em;
 		justify-content: space-between;
-	padding: var(--GalleryPadding);
+	/* padding: var(--GalleryPadding); */
 	width: inherit;
 }
  
@@ -238,10 +238,12 @@ border-radius: var(--border-radius); /* Default border radius */
 	align-items: center;
 	justify-content: center;
 }
-
+.ContentHolder:last-child{
+	border: none;
+}
 
  .ContentHolder{
-	margin: 0 auto;
+	margin: 3rem auto;
 	width: 100%;
 	padding: var(--GalleryPadding);
 	max-width: var(--HeroBannerWidth);
@@ -259,9 +261,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	font-weight: 700;
 	color: var(--favBlue);
 	display: block;
-	margin-left: -3px;
-	line-height: calc(var(--SecondaryLineHeight) + 1rem);
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 }
 
 .contentHolderHeader p::after {
