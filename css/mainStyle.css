@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
 
 
 
@@ -14,7 +15,7 @@
 	/* --favBlue:#1d2834; */
 	/* --LightGreyHighlight: #f4f2ee; */
  --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
-	--GalleryPadding: 3rem;
+	--GalleryPadding: 3.5rem;
 	--CardsPadding:1.5rem;
 	--border-radius: 12px;
 	--image-border-radius: 6px;
@@ -26,8 +27,8 @@
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
---HeadlineFont: "DM Sans", sans-serif;
-	--HeaderMain:3.5rem;
+--HeadlineFont: "Arimo", sans-serif;
+	--HeaderMain:4rem;
 	--SubHeader: 2.5rem;
 	--CardHeader:1.5rem;
 }
@@ -42,7 +43,7 @@
 
 
 .Container { 
-		background-color: white;
+	 background-color: var(--secondary-color);
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	grid-template-columns: minmax(0, 1fr);	
@@ -81,7 +82,7 @@ p a{
 
 html{
 	overflow-x: hidden;
-	 scroll-padding-top: 4.5rem;
+	 scroll-padding-top: 8rem;
 }
 
 h1 {
@@ -118,7 +119,6 @@ top: 0;
 	max-width: var(--HeroBannerWidth);
 	margin: 0 auto;
 	height: inherit;
-	padding: 0 4.5rem;
 }
 
 header .logo a{
@@ -156,7 +156,7 @@ nav ul li a {
 	font-family: var(--HeadlineFont);
 	font-size: 1rem;
 	letter-spacing: .2px;
-	font-weight: 600;
+	font-weight: 500;
 	align-items: center;
 	text-decoration: none;
 	height: 80px;
@@ -184,10 +184,9 @@ border-radius: var(--border-radius); /* Default border radius */
 }
 
 .HeroBannerBox h1 {
-	z-index: 999;
+	letter-spacing: -3px;
 	font-weight: 700;
-	margin-bottom: 1.5rem;
-	line-height: 4.5rem;
+	line-height: 5.5rem;
 }
 
 .HeroBannerBox p {
@@ -200,13 +199,10 @@ border-radius: var(--border-radius); /* Default border radius */
 .innerBanner{
 		/* background-color: var(--secondary-color); */
   margin: 0 auto;
-  background-color: var(--secondary-color);
-  padding: var(--GalleryPadding);
 	border-radius: var(--border-radius);
-	max-width: var(--HeroBannerWidth);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
-	gap: 2em;
+	gap: 3em;
 		justify-content: space-between;
 	/* padding: var(--GalleryPadding); */
 	width: inherit;
@@ -216,7 +212,10 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .HeroBannerBox{
 	width: 100%;
-	position: relative;
+display: grid;
+	grid-template-rows: 1fr;
+	align-items: center
+	justify-content:flex-end;
 }
 
 .HeroBannerBox img{
@@ -228,8 +227,9 @@ border-radius: var(--border-radius); /* Default border radius */
 	background-color: white;
 	border-radius: var(--border-radius); 
 	border: 1px solid var(--BorderColor);
+	box-shadow: var(--box-shadow);
 	padding: var(--GalleryPadding);
-	max-width: var(--ContainerWidth);
+	max-width: var(--HeroBannerWidth);
 	width: 100%;
 	height:fit-content;
 	margin: 20px auto;
@@ -240,12 +240,13 @@ border-radius: var(--border-radius); /* Default border radius */
 }
 .ContentHolder:last-child{
 	border: none;
+	background: none;
 }
 
  .ContentHolder{
 	margin: 3rem auto;
 	width: 100%;
-	padding: var(--GalleryPadding);
+padding: var(--GalleryPadding); 
 	max-width: var(--HeroBannerWidth);
 	height: auto;
 	display:flex;
@@ -259,12 +260,17 @@ border-radius: var(--border-radius); /* Default border radius */
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
 	font-weight: 700;
+		letter-spacing: -1px;
 	color: var(--favBlue);
 	display: block;
 	margin-bottom: 1rem;
+		text-align: center;
+}
+.contentHolderHeader p{
+		text-align: center;
 }
 
-.contentHolderHeader p::after {
+.contentHolderHeader::after {
 	display: block;
 	content: '';
 	border-bottom: 1px solid var(--secondary-color);
@@ -374,7 +380,7 @@ vertical-align: -1px;
 	background-color: var(--secondary-color);
 	color: black;
 	font-family: var(--HeadlineFont);
-	font-size: 1rem;
+	font-size: 0.875rem;
 	font-weight: 600;
 	letter-spacing: .1px;
 	display: flex;

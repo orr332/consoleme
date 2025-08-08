@@ -31,12 +31,15 @@ width: 100%;
 }
 .HeroBannerBox h1{
 	font-family: var(--HeadlineFont);
-	line-height: 40px;
+	line-height: 2.25rem;
     font-size: 1.75em;
+	letter-spacing: normal;
 	}
 .HeroBannerBox p{
 	font-size: 1.25rem;
 	font-weight: 300;
+		line-height: 2rem;
+
 }
 .ContentHolder{
 		padding: 0 2rem;
