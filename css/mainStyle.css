@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); 
 
 
 
@@ -11,26 +10,26 @@
 	/* --BorderColor: #c5c5c5; */
 	--BorderColor: #d4d4d4;
 	--background-color: #fafafa;
-	--favBlue:#2F373D;
+	--favBlue:#123458;
 	/* --favBlue:#1d2834; */
 	/* --LightGreyHighlight: #f4f2ee; */
  --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
-	--GalleryPadding: 3.5rem;
+	--GalleryPadding: 5rem;
 	--CardsPadding:1.5rem;
 	--border-radius: 12px;
 	--image-border-radius: 6px;
-	--HeroBannerWidth: 120rem;
+	--HeroBannerWidth: 130rem;
 	--ContainerWidth: 90rem;
-	--Lineheight: 1.6rem;
+	--Lineheight: 1.5rem;
 	--SecondaryLineHeight: 3.5rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
---HeadlineFont: "Arimo", sans-serif;
-	--HeaderMain:4rem;
+--HeadlineFont: "DM Sans", sans-serif;
+	--HeaderMain:6rem;
 	--SubHeader: 2.5rem;
-	--CardHeader:1.5rem;
+	--CardHeader:1.6rem;
 }
 
 * {
@@ -50,10 +49,7 @@
 	min-height: 100vh;
 	margin: 0 auto;
 	width: 100%;
-	box-shadow: var(--box-shadow);
-		border: 1px solid var(--BorderColor);
 		border-top: none;
-		position: relative;
 		z-index: 1;
 }
 
@@ -82,7 +78,7 @@ p a{
 
 html{
 	overflow-x: hidden;
-	 scroll-padding-top: 8rem;
+	 scroll-padding-top: 6rem;
 }
 
 h1 {
@@ -154,7 +150,7 @@ nav ul li {
 nav ul li a {
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
-	font-size: 1rem;
+	font-size: 1.25rem;
 	letter-spacing: .2px;
 	font-weight: 500;
 	align-items: center;
@@ -178,33 +174,41 @@ border-radius: var(--border-radius); /* Default border radius */
 
 
 .HeroBanner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
+	padding: var(--GalleryPadding);
+	background-color: white;
+	height: 92vh;
 }
 
 .HeroBannerBox h1 {
-	letter-spacing: -3px;
 	font-weight: 700;
-	line-height: 5.5rem;
+	line-height: 6.5rem;
+	letter-spacing: -.4px;
 }
 
 .HeroBannerBox p {
 	line-height: 2rem;
 	font-weight: 400;
-	margin-bottom: 1.5rem;
 	font-size: 1.25rem;
 }
 
 .innerBanner{
-		/* background-color: var(--secondary-color); */
+/* 	border-color: var(--BorderColor);
+	box-shadow: var(--box-shadow);
+	background-color: var(--secondary-color); */
+	padding: var(--GalleryPadding);
   margin: 0 auto;
+  max-width: var(--HeroBannerWidth);
 	border-radius: var(--border-radius);
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); 
+	grid-template-columns: 1fr 1fr; 
 	gap: 3em;
 		justify-content: space-between;
-	/* padding: var(--GalleryPadding); */
 	width: inherit;
 }
  
@@ -212,10 +216,11 @@ border-radius: var(--border-radius); /* Default border radius */
 
 .HeroBannerBox{
 	width: 100%;
-display: grid;
-	grid-template-rows: 1fr;
-	align-items: center
-	justify-content:flex-end;
+ display: grid;
+    grid-auto-columns: 1fr;
+	grid-row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .HeroBannerBox img{
@@ -238,10 +243,7 @@ display: grid;
 	align-items: center;
 	justify-content: center;
 }
-.ContentHolder:last-child{
-	border: none;
-	background: none;
-}
+
 
  .ContentHolder{
 	margin: 3rem auto;
@@ -260,30 +262,26 @@ padding: var(--GalleryPadding);
 	font-family: var(--HeadlineFont);
     font-size: var(--SubHeader);
 	font-weight: 700;
-		letter-spacing: -1px;
+		letter-spacing: -.25px;
 	color: var(--favBlue);
 	display: block;
 	margin-bottom: 1rem;
-		text-align: center;
-}
-.contentHolderHeader p{
 		text-align: center;
 }
 
 .contentHolderHeader::after {
 	display: block;
 	content: '';
-	border-bottom: 1px solid var(--secondary-color);
+	border-bottom: 1px solid var(--favBlue);
 	width: 100%;
 	padding-top: 2rem;
 	margin-bottom: 2rem;
 }
 
-
 .CardGallery {
 	display: grid;
 grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); 
-	gap: 3rem; 
+	gap: 2rem; 
 	justify-content: center;
 	width: 100%;
 }
@@ -376,13 +374,13 @@ vertical-align: -1px;
 
 .button-link {
 	width: 100%;
-	padding: var(--CardsPadding);
+	padding: 1.25rem;
 	background-color: var(--secondary-color);
 	color: black;
 	font-family: var(--HeadlineFont);
-	font-size: 0.875rem;
-	font-weight: 600;
-	letter-spacing: .1px;
+	font-size: 1.12rem;
+	font-weight: 500;
+	letter-spacing: .2px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -396,7 +394,7 @@ vertical-align: -1px;
 	border-top: 1px solid var(--LightGrey-color);
 }
 
-.HeroBannerBox .button-link:hover, .button-link:hover {
+.HeroBannerBox .button-link:hover, #About .button-link:hover, .button-link:hover {
 	cursor: pointer;
 	color: white;
 		background: var(--favBlue);
@@ -404,7 +402,7 @@ vertical-align: -1px;
 }
 
 
-.HeroBannerBox .button-link{
+.HeroBannerBox .button-link, #About .button-link{
 	max-width: fit-content;
 	color:white;
 		background:#006699;
@@ -420,17 +418,18 @@ footer {
 	border-top: #006699 2px solid;
     bottom: 0;
     left: 0;
+	right: 0;
     width: 100%;
-    z-index: -100;
-	margin: 0 auto;
-	position: relative;
+    z-index: 100;
+margin-top: auto;
 }
 
 
 .footerContainer{
 	width: 100%;
 	max-width: var(--HeroBannerWidth);
-    padding: var(--GalleryPadding);
+	padding: var(--GalleryPadding);
+		margin: 0 auto;
 }
 
 .footerContainer p, .footerContainer ul li{

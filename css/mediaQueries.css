@@ -2,7 +2,10 @@
 /* CSS Document */
 
 
-@media (max-width: 1390px) {
+@media (max-width: 1400px) {
+	.Container{
+		padding: 3rem;
+	}
 	.logo {
 		z-index: 999;
 		font-weight: 500;
@@ -28,6 +31,7 @@ width: 100%;
 .HeroBanner{
 		flex-direction: column;
 		padding: 0 2rem;
+		
 }
 .HeroBannerBox h1{
 	font-family: var(--HeadlineFont);
