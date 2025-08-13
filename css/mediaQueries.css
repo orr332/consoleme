@@ -4,7 +4,7 @@
 
 @media (max-width: 1400px) {
 	.Container{
-		padding: 3rem;
+		padding: 1rem;
 	}
 	.logo {
 		z-index: 999;
