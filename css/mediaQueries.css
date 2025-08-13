@@ -82,7 +82,7 @@ text-align: left;
 	.ProjectHolder{
 		border-radius: 12px;
 		margin: 40 auto;
-		padding: 50px;
+		padding: 1rem;
 	}
 	.CardGallery{
 		display: grid;
