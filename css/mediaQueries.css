@@ -106,9 +106,16 @@ padding: 30px;
 			.header .logo {
 		z-index: 999;
 		font-weight: 500;
+		font-size: medium;
 	}
+	.button-link{
+		display: block;
+
+	}
+
 .HeroBannerBox p{
-	display: none;
+word-break: normal;
+word-wrap: no-wrap;
 }
 
 .navContainer{
@@ -125,11 +132,10 @@ padding: 30px;
 	.HeroBannerBox h1, .contentHolderHeader{
 font-size: 1rem;
 line-height: 1.5rem;	
+text-align: left;
 }
 .innerBanner{
 	padding: 1rem;
 }
-	.HeroBannerBox p{
-		display: none;
-	}
+	
 }
