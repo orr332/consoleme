@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
 
@@ -19,17 +19,17 @@
 	--border-radius: 12px;
 	--image-border-radius: 6px;
 	--HeroBannerWidth: 130rem;
-	--ContainerWidth: 90rem;
+	--ContainerWidth: 110rem;
 	--Lineheight: 1.5rem;
 	--SecondaryLineHeight: 3.5rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
---HeadlineFont: "DM Sans", sans-serif;
-	--HeaderMain:6rem;
-	--SubHeader: 2.5rem;
-	--CardHeader:1.6rem;
+--HeadlineFont: "Open Sans", sans-serif;
+	--HeaderMain:4rem;
+	--SubHeader: 3rem;
+	--CardHeader:1.5rem;
 }
 
 * {
@@ -112,7 +112,7 @@ top: 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	max-width: var(--HeroBannerWidth);
+	max-width: var(--ContainerWidth);
 	margin: 0 auto;
 	height: inherit;
 }
@@ -150,9 +150,9 @@ nav ul li {
 nav ul li a {
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
-	font-size: 1.25rem;
-	letter-spacing: .2px;
-	font-weight: 500;
+	font-size: 1rem;
+	letter-spacing: .1px;
+	font-weight: 600;
 	align-items: center;
 	text-decoration: none;
 	height: 80px;
@@ -174,20 +174,20 @@ border-radius: var(--border-radius); /* Default border radius */
 
 
 .HeroBanner {
+	color: white;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-self: center;
 	width: 100%;
 	margin: 0 auto;
-	position: relative;
-	padding: var(--GalleryPadding);
 	background-color: white;
-	height: 92vh;
+	height: 95vh;
+background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0c5988, #006699);
 }
 
 .HeroBannerBox h1 {
 	font-weight: 700;
-	line-height: 6.5rem;
+	line-height: 5rem;
 	letter-spacing: -.4px;
 }
 
@@ -195,21 +195,18 @@ border-radius: var(--border-radius); /* Default border radius */
 	line-height: 2rem;
 	font-weight: 400;
 	font-size: 1.25rem;
+	color: white;
 }
 
 .innerBanner{
-/* 	border-color: var(--BorderColor);
-	box-shadow: var(--box-shadow);
-	background-color: var(--secondary-color); */
-	padding: var(--GalleryPadding);
+	max-width: var(--ContainerWidth);
   margin: 0 auto;
-  max-width: var(--HeroBannerWidth);
-	border-radius: var(--border-radius);
 	display: grid;
 	grid-template-columns: 1fr 1fr; 
 	gap: 3em;
 		justify-content: space-between;
-	width: inherit;
+		justify-items: end;
+		align-items: center;
 }
  
 
@@ -217,8 +214,7 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox{
 	width: 100%;
  display: grid;
-    grid-auto-columns: 1fr;
-	grid-row-gap: 1rem;
+    grid-auto-rows: repeat(1fr);
     justify-content: center;
     align-items: center;
 }
@@ -226,6 +222,9 @@ border-radius: var(--border-radius); /* Default border radius */
 .HeroBannerBox img{
 	border-radius: var(--border-radius);
 	width: 100%;
+display: flex;
+justify-content: flex-end;
+align-content:end;
 }
 
 .ProjectHolder{
@@ -234,7 +233,7 @@ border-radius: var(--border-radius); /* Default border radius */
 	border: 1px solid var(--BorderColor);
 	box-shadow: var(--box-shadow);
 	padding: var(--GalleryPadding);
-	max-width: var(--HeroBannerWidth);
+	max-width: var(--ContainerWidth);
 	width: 100%;
 	height:fit-content;
 	margin: 20px auto;
@@ -281,7 +280,7 @@ padding: var(--GalleryPadding);
 .CardGallery {
 	display: grid;
 grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); 
-	gap: 2rem; 
+	gap: 3rem; 
 	justify-content: center;
 	width: 100%;
 }
