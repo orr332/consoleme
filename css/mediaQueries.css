@@ -100,6 +100,7 @@ gap: 2rem;
 	}
  .ContentHolder, .HeroBanner{
 padding: 30px;	
+height: fit-content;
 }
 }
 	@media (max-width: 720px) {
