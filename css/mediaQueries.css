@@ -103,40 +103,46 @@ padding: 30px;
 height: fit-content;
 }
 }
-	@media (max-width: 720px) {
-			.header .logo {
+
+
+@media (max-width: 720px) {
+	.header .logo {
 		z-index: 999;
 		font-weight: 500;
 		font-size: medium;
 	}
-	.button-link{
-		display: block;
 
+	.button-link {
+		display: block;
 	}
 
-.HeroBannerBox p{
-word-break: normal;
-word-wrap: no-wrap;
-}
+	.HeroBannerBox p {
+		word-break: normal;
+		word-wrap: no-wrap;
+	}
 
-.navContainer{
-	padding: 0 2rem;
-}
+	.navContainer {
+		padding: 0 2rem;
+	}
 
-	.Cards{
+	.Cards {
 		width: 100%;
 	}
-	.HeroBannerBox .button-link{
-				width: 100%;
+
+	.HeroBannerBox .button-link {
+		width: 100%;
 
 	}
-	.HeroBannerBox h1, .contentHolderHeader{
-font-size: 1rem;
-line-height: 1.5rem;	
-text-align: left;
-}
-.innerBanner{
-	padding: 1rem;
-}
-	
+
+	.HeroBannerBox h1,
+	.contentHolderHeader {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		text-align: left;
+	}
+
+	.innerBanner {
+		padding: 1rem;
+	}
+
 }
