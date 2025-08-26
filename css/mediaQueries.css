@@ -134,10 +134,9 @@ height: fit-content;
 
 	}
 
-	.HeroBannerBox h1,
-	.contentHolderHeader {
-		font-size: 1rem;
-		line-height: 1.5rem;
+	.HeroBannerBox h1{
+		font-size: 1.5rem;
+		line-height: 2rem;
 		text-align: left;
 	}
 
