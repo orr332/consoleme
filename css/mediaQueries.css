@@ -23,20 +23,18 @@
 	}
 
 .innerBanner{
-display: flex;
-flex-direction: column;
+flex: auto;
 padding: 50px;
 width: 100%;
 }
 .HeroBanner{
 		flex-direction: column;
-		padding: 0 2rem;
-		
+		grid-template-columns: 1fr;		
 }
 .HeroBannerBox h1{
 	font-family: var(--HeadlineFont);
-	line-height: 2.25rem;
-    font-size: 1.75em;
+	line-height: 3.5rem;
+    font-size: 3em;
 	letter-spacing: normal;
 	}
 .HeroBannerBox p{
