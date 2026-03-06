@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+	/* --BorderColor: #e2e2e3; */
+	/* --BorderColor: #c5c5c5; */
+	--BorderColor: #e4e1e1;
+	--background-color: #fafafa;
+	--favBlue:#123458;
+	/* --favBlue:#1d2834; */
+	/* --LightGreyHighlight: #f4f2ee; */
+ --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
+	--GalleryPadding: 5rem;
+	--CardsPadding:1.5rem;
+	--border-radius: 12px;
+	--image-border-radius: 6px;
+	--HeroBannerWidth: 130rem;
+	--ContainerWidth: 110rem;
+	--Lineheight: 1.4;
+	--SecondaryLineHeight: 3rem;
+	--main-color: #222222;
+	--secondary-color: #e9e9e9;
+	--LightGrey-color: #c9c9c9;
+	--CardColor: #F3F4F5;
+--HeadlineFont: "Inter Tight", sans-serif;
+	--HeaderMain:4rem;
+	--SubHeader: 3.3rem;
+	--CardHeader:1.25rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-optical-sizing: auto;
+}
+
+
+.Container { 
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: minmax(0, 1fr);	
+	min-height: 100vh;
+	margin: 0 auto;
+	width: 100%;
+		border-top: none;
+		z-index: 1;
+}
+
+p, p a{
+  font-family: "Inter Tight", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  	font-size:1rem;
+	line-height: var(--Lineheight);
+	color: black;
+	text-wrap: pretty;
+}
+p a{
+	text-decoration: underline;
+	color: #006699;
+}
+
+
+ .images{
+	border-radius: var(--border-radius);
+	border: var(--BorderColor);
+	width: 100%;
+	height: auto;
+	margin: 10px 0 20px 0;
+}
+	
+
+html{
+	overflow-x: hidden;
+	 scroll-padding-top: 6rem;
+}
+
+h1 {
+	font-family: var(--HeadlineFont);
+	font-size: var(--HeaderMain);
+	flex-wrap: nowrap;
+}
+
+h1 a:hover {
+	color: #333333;
+}
+
+
+
+
+
+header {
+	z-index: 1000;
+	width: 100%;
+	max-width: inherit;
+	height: 5.5rem;
+	border-bottom: 1px solid var(--LightGrey-color); 
+background-color: white;
+box-shadow: var(--box-shadow);
+position:sticky;
+top: 0;
+}
+
+
+.navContainer{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: var(--ContainerWidth);
+	margin: 0 auto;
+	height: inherit;
+}
+
+header .logo a{
+	color: var(--main-color);
+	text-wrap: nowrap;
+    font-size: 2rem;
+		font-weight: 400;
+	display: flex;
+	letter-spacing: -.25px;
+	font-family: var(--HeadlineFont);
+	font-style: normal;
+}
+
+header .logo a:hover{
+	color:var(--secondary-color);
+}
+
+/*MAIN MENU*/
+#menu-icon {
+	display: none;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li a {
+	color: var(--main-color);
+	font-family: var(--HeadlineFont);
+	letter-spacing: .25px;
+	font-size: .875rem;
+	align-items: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	height: 80px;
+	padding: 10px;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+nav ul li a:hover{
+	cursor: pointer;
+border-radius: var(--border-radius); /* Default border radius */
+	background-color:var(--favBlue);
+	color: white;
+	padding: 10px;
+}
+
+/*MAIN MENU*/
+
+
+.HeroBanner {
+	color: white;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+	height: fit-content;
+	padding: var(--GalleryPadding);
+background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0c5988, #006699);
+}
+
+
+.innerBanner{
+	max-width: var(--ContainerWidth);
+  margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	gap: 3em;
+		justify-content: space-between;
+		justify-items: end;
+		align-items: center;
+}
+ 
+
+
+.HeroBannerBox{
+	width: 100%;
+ display: grid;
+    grid-auto-rows: repeat(1fr);
+    justify-content:flex-start;
+    align-items: left;
+	gap: 1rem;
+}
+.HeroBannerBox h1 {
+	font-weight: 500;
+	line-height: 1.1;
+	letter-spacing: 1px;
+}
+
+.HeroBannerBox p {
+	line-height: 1.5rem;
+	font-weight: 400;
+	font-size: 1rem;
+	color: white;
+}
+.HeroBannerButton{
+display: flex; 
+flex-wrap: wrap; 
+gap: 1rem;
+}
+.HeroBannerBox:last-child{
+	display: grid;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.HeroBannerBox img{
+	border-radius: var(--border-radius);
+	width: 100%;
+display: flex;
+justify-content: flex-end;
+align-content:end;
+}
+
+.ProjectHolder{
+	background-color: white;
+	border-radius: var(--border-radius); 
+	border: 1px solid var(--BorderColor);
+	box-shadow: var(--box-shadow);
+	padding: var(--GalleryPadding);
+	max-width: var(--ContainerWidth);
+	width: 100%;
+	height:fit-content;
+	margin: 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+
+ .ContentHolder{
+	margin: 3rem auto;
+	width: 100%;
+padding: var(--GalleryPadding); 
+	max-width: var(--HeroBannerWidth);
+	height: auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+}
+
+
+.contentHolderHeader h1{
+	font-family: var(--HeadlineFont);
+    font-size: var(--SubHeader);
+	font-weight: 500;
+		letter-spacing: -.5px;
+	color: var(--favBlue);
+	display: block;
+	margin-bottom: 1rem;
+		text-align: center;
+}
+
+.contentHolderHeader::after {
+	display: block;
+	content: '';
+	border-bottom: 1px solid var(--favBlue);
+	width: 100%;
+	padding-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.CardGallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+/* grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));  */
+	gap: 3rem; 
+	justify-content: center;
+	width: 100%;
+}
+
+
+.Cards {
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--border-radius);
+	border: var(--LightGrey-color) 1px solid;
+	box-shadow: var(--box-shadow);
+	box-sizing: border-box;
+height: fit-content;
+  	overflow: hidden;
+}
+
+
+.Cards img{
+	border-top-left-radius: var(--image-border-radius);
+  width: 100%;
+  height: auto;
+  	object-fit: cover;
+	overflow: auto;
+	background-size: cover;
+	z-index: 1;
+}
+
+.CardInfo{
+	padding: var(--CardsPadding);
+}
+
+.Cards h1{
+	font-family: var(--HeadlineFont);
+    font-size: var(--CardHeader);
+	font-weight: 600;
+	letter-spacing: .25px;
+	margin-top: -10px;
+	color: #000;
+	line-height: var(--SecondaryLineHeight);
+}
+.Cards h1 a{
+	color: var(--favBlue);
+}
+
+.Cards h1 a:hover{
+	color: #006699;
+			transition-duration: 0.5s;
+
+}
+
+
+.CardInfoGrid{
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+
+.CardInfoGridBox ul{
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;	
+  list-style-type: none;
+}
+
+ .CardInfoGridBox ul li {
+	color: var(--LightGrey-color);
+	font-size: .75rem;
+	font-weight: 400;	
+	text-decoration: none;
+	line-height: var(--Lineheight);
+ }
+
+.CardInfoGridBox ul li::before{
+  content: '';
+	display: inline-block;
+	background-color: var(--LightGrey-color);
+	border-radius: 2px;
+	margin-right: 5px; 
+	width: 10px;
+	height: 10px;
+vertical-align: -1px;
+} 
+
+
+.CardButton{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: auto;
+}
+
+.button-link {
+	width: 100%;
+	padding: 1.25rem;
+	background-color: var(--secondary-color);
+	color: black;
+	font-family: var(--HeadlineFont);
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: .25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+		flex-wrap: nowrap;
+}
+
+.Cards .button-link{
+	border-top: 1px solid var(--LightGrey-color);
+}
+
+.HeroBannerBox .button-link:hover, #About .button-link:hover, .button-link:hover {
+	cursor: pointer;
+	color: white;
+		background: var(--favBlue);
+
+}
+
+
+.HeroBannerBox .button-link, #About .button-link{
+	max-width: fit-content;
+	color:white;
+		background:#006699;
+	border-radius: 25px;
+	padding: 12px 24px;
+}
+
+
+footer {
+	height: 275px;
+	background: var(--favBlue);
+    color: white;
+	border-top: #006699 2px solid;
+    bottom: 0;
+    left: 0;
+	right: 0;
+    width: 100%;
+    z-index: 100;
+margin-top: auto;
+}
+
+
+.footerContainer{
+	width: 100%;
+	max-width: var(--HeroBannerWidth);
+	padding: var(--GalleryPadding);
+		margin: 0 auto;
+}
+
+.footerContainer p, .footerContainer ul li{
+color:white;
+  font-size: 14px;
+    font-weight: 400;
+  font-family: "Lato", sans-serif;
+  list-style: none;
+  line-height: var(--Lineheight);
+}
