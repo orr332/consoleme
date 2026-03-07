@@ -115,8 +115,10 @@ height: fit-content;
 	}
 
 	.HeroBannerBox p {
-		word-break: normal;
-		word-wrap: no-wrap;
+	font-size: .9em;
+        word-break: normal;
+        word-wrap: no-wrap;
+        line-height: 1.4;
 	}
 
 	.navContainer {
@@ -140,6 +142,13 @@ height: fit-content;
 
 	.innerBanner {
 		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.HeroButton{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 
 }
