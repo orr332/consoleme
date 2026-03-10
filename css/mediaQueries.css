@@ -1,8 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
+@media (max-width: 900px) {
+	.navContainer {
+		padding: 0 2rem;
+	}
+
+}
 
 
 @media (max-width: 1400px) {
+	
 	.Container{
 		padding: 1rem;
 	}
@@ -151,7 +158,7 @@ height: fit-content;
 		width: 100%;
 	}
 	.Projects{
-		padding: 1rem;
+		padding: 8px;
 	}
 
 }
