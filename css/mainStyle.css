@@ -288,7 +288,7 @@ padding: var(--GalleryPadding);
 
 .contentHolderHeader h2{
 	font-family: var(--HeadlineFont);
-    font-size: clamp(var(--SubHeader), 2.5rem, 2rem);
+    font-size: clamp(var(--SubHeader), 2rem, 1.25rem);
 	font-weight: 600;
 	letter-spacing: -0.04em;
 	color: var(--favBlue);
