@@ -241,6 +241,7 @@ letter-spacing: -0.02em;
   align-items: center;
   gap: 2rem;
   color: white;
+  white-space: nowrap;
 }
 
 .Projects{
@@ -290,6 +291,7 @@ padding: var(--GalleryPadding);
 	font-family: var(--HeadlineFont);
     font-size: clamp(var(--SubHeader), 2rem, 1.25rem);
 	font-weight: 600;
+			margin-bottom: .5rem;
 	letter-spacing: -0.04em;
 	color: var(--favBlue);
 	display: block;
@@ -346,7 +348,7 @@ height: fit-content;
 	font-weight: 600;
 	letter-spacing: -.05px;
 	color: #000;
-	margin-bottom: 1rem;
+	margin-bottom: .5rem;
 }
 
 .Cards h1 a{
