@@ -27,7 +27,7 @@
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "Manrope", sans-serif;
 	--HeaderMain:5.5rem;
-	--SubHeader: 3.25rem;
+	--SubHeader: 3rem;
 	--CardHeader:1.25rem;
 }
 
@@ -288,7 +288,7 @@ padding: var(--GalleryPadding);
 
 .contentHolderHeader h2{
 	font-family: var(--HeadlineFont);
-    font-size: var(--SubHeader);
+    font-size: clamp(var(--SubHeader), 2.5rem, 2rem);
 	font-weight: 600;
 	letter-spacing: -0.04em;
 	color: var(--favBlue);
