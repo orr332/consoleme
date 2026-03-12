@@ -4,6 +4,9 @@
 	.navContainer {
 		padding: 0 2rem;
 	}
+	.h1{
+		line-height: 1em;
+	}
 
 }
 

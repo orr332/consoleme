@@ -40,16 +40,6 @@
 }
 
 
-.Container { 
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	grid-template-columns: minmax(0, 1fr);	
-	min-height: 100vh;
-	margin: 0 auto;
-	width: 100%;
-		border-top: none;
-		z-index: 1;
-}
 
 p, p a{
 	font-family: Arial, Helvetica, sans-serif;
@@ -83,6 +73,7 @@ h1 {
 	font-family: var(--HeadlineFont);
 	font-size: var(--HeaderMain);
 	flex-wrap: nowrap;
+	letter-spacing: -0.02em;
 }
 
 h1 a:hover {
@@ -111,13 +102,14 @@ top: 0;
 	justify-content: space-between;
 		margin: 0 auto;
 	height: inherit;
-	max-width: 1500px;
+	padding-inline: 4rem;
 }
 
 header .logo a{
 	color: var(--main-color);
 	text-wrap: nowrap;
     font-size: 2rem;
+	font-weight: 600;
 	display: flex;
 	font-family: var(--HeadlineFont);
 	font-style: normal;
@@ -278,7 +270,7 @@ align-content:end;
 	margin: 0 auto;
 	width: 100%;
 padding: var(--GalleryPadding); 
-	max-width: var(--HeroBannerWidth);
+	max-width: var(--ContainerWidth);
 	height: auto;
 	display:flex;
 	flex-direction: column;
@@ -292,7 +284,7 @@ padding: var(--GalleryPadding);
     font-size: clamp(var(--SubHeader), 2rem, 1.25rem);
 	font-weight: 600;
 			margin-bottom: .5rem;
-	letter-spacing: -0.04em;
+	letter-spacing: -.03em;
 	color: var(--favBlue);
 	display: block;
 }
@@ -346,7 +338,7 @@ height: fit-content;
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
 	font-weight: 600;
-	letter-spacing: -.05px;
+	letter-spacing: -.01em;
 	color: #000;
 	margin-bottom: .5rem;
 }
