@@ -4,9 +4,6 @@
 	.navContainer {
 		padding: 0 2rem;
 	}
-	.h1{
-		line-height: 1em;
-	}
 
 }
 
@@ -117,6 +114,10 @@ height: fit-content;
 		z-index: 999;
 		font-weight: 500;
 		font-size: medium;
+	}
+	h1{
+		line-height: 1rem;
+		font-size: 1rem;
 	}
 
 	.button-link {
