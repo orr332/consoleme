@@ -99,10 +99,9 @@ top: 0;
 .navContainer{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 		margin: 0 auto;
 	height: inherit;
-	max-width: var(--ContainerWidth);
 }
 
 header .logo a{
@@ -132,7 +131,7 @@ nav ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-padding: 20px;
+   gap: 2rem;
 }
 
 nav ul li {
@@ -155,7 +154,7 @@ nav ul li {
 	border-radius: 30px;
 	transition-duration: 0.5s;
 	color: white;
-	font-weight: 500;
+	font-weight: 400;
 	letter-spacing: 1px;
 }
 
@@ -166,7 +165,7 @@ nav ul li {
 nav ul li a, .contactButton{
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
-	font-weight: 500;
+	font-weight: 400;
 	letter-spacing: 0.04em;
 	font-size: .875em;
 	align-items: center;
@@ -181,7 +180,6 @@ nav ul li a:hover{
 border-radius: var(--border-radius); /* Default border radius */
 	background-color:var(--favBlue);
 	color: white;
-	padding: 10px;
 }
 
 /*MAIN MENU*/
@@ -406,12 +404,10 @@ vertical-align: -1px;
 	font-size: .875rem;
 	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: -.05;
+	letter-spacing: -.03;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 		flex-wrap: nowrap;
 }
