@@ -38,12 +38,7 @@ width: 100%;
 		flex-direction: column;
 		grid-template-columns: 1fr;		
 }
-.HeroBannerBox h1{
-	font-family: var(--HeadlineFont);
-	line-height: 3.5rem;
-    font-size: 3em;
-	letter-spacing: normal;
-	}
+
 .HeroBannerBox p{
 	font-size: 1.25rem;
 	font-weight: 300;

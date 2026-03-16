@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 
 
 
@@ -19,15 +19,15 @@
 	--image-border-radius: 6px;
 	--HeroBannerWidth: 130rem;
 	--ContainerWidth: 1400px;
-	--Lineheight: 1.5em;
+	--Lineheight: 1.6em;
 	--SecondaryLineHeight: 3rem;
 	--main-color: #222222;
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
---HeadlineFont:  "Public Sans", sans-serif;
-	--HeaderMain:4rem;
-	--SubHeader: 2rem;
+--HeadlineFont:   "Geist", sans-serif;
+	--HeaderMain:3.5rem;
+	--SubHeader: 1.625rem;
 	--CardHeader:1.25rem;
 }
 
@@ -132,7 +132,7 @@ nav ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-   gap: 2rem;
+padding: 20px;
 }
 
 nav ul li {
@@ -166,8 +166,8 @@ nav ul li {
 nav ul li a, .contactButton{
 	color: var(--main-color);
 	font-family: var(--HeadlineFont);
-	font-weight: 600;
-	letter-spacing: 0.05em;
+	font-weight: 500;
+	letter-spacing: 0.04em;
 	font-size: .875em;
 	align-items: center;
 	text-decoration: none;
@@ -181,6 +181,7 @@ nav ul li a:hover{
 border-radius: var(--border-radius); /* Default border radius */
 	background-color:var(--favBlue);
 	color: white;
+	padding: 10px;
 }
 
 /*MAIN MENU*/
@@ -201,6 +202,7 @@ background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0
 	max-width: var(--ContainerWidth);
 	color: white;
 	padding: var(--GalleryPadding);
+	display: flex;
 }
  
 
@@ -216,6 +218,7 @@ background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0
 
 
 .HeroBannerBox h1{
+	line-height: 4.5rem;
 	margin-bottom: 1rem;
 font-weight: 400;
 letter-spacing: -0.02em;
@@ -285,8 +288,7 @@ padding: var(--GalleryPadding);
 	font-family: var(--HeadlineFont);
     font-size: clamp(var(--SubHeader), 2rem, 1.25rem);
 	font-weight: 600;
-			margin-bottom: .5rem;
-	letter-spacing: -.03em;
+	letter-spacing: -.01em;
 	color: var(--favBlue);
 	display: block;
 }
@@ -342,7 +344,6 @@ height: fit-content;
 	font-weight: 600;
 	letter-spacing: -.01em;
 	color: #000;
-	margin-bottom: 1rem;
 }
 
 .Cards h1 a{
@@ -453,7 +454,7 @@ footer{
     letter-spacing: -0.05em;
 }
 
-.footerConta{
+.footerContainer{
 	width: 100%;
 	max-width: var(--HeroBannerWidth);
 	padding: var(--GalleryPadding);
@@ -464,7 +465,6 @@ footer{
 color:white;
   font-size: 14px;
     font-weight: 400;
-  font-family: "Lato", sans-serif;
   list-style: none;
   line-height: var(--Lineheight);
 }
