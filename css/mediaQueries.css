@@ -1,7 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
-@media (max-width: 1400px) {
-	
+@media (max-width: 1200px) {
+	.innerBanner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.Container{
 		padding: 1rem;
 	}
@@ -13,26 +18,14 @@
 	width: 100%;
 	margin: 0 auto;
 }
-	nav ul li{
+	nav ul li a{
 		display: none;
 	}
 
 	.navContainer{
 		padding: 0 1rem;
 	}
-
-}
-
-
-
-@media (max-width: 950px) {
-	.CardGallery {
-		display: grid;
-		grid-template-columns: 1fr;
-		margin: 0 auto;
-	}
-
-	.ContentHolder,
+		.ContentHolder,
 	.HeroBanner {
 		padding: 30px;
 		height: fit-content;
@@ -40,26 +33,27 @@
 }
 
 
+
+@media (max-width: 950px) {
+
+	.contactButton{
+		 display: block !important;
+    position: static;
+	}
+}
+
+
 @media (max-width: 720px) {
-	.navContainer {
-		padding: 0 2rem;
-	}
 
-	.innerBanner {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-
+	
 	.header .logo {
 		z-index: 999;
 		font-weight: 500;
 		font-size: medium;
 	}
 
-	h1 {
-		line-height: 1rem;
-		font-size: 1rem;
+		.HeroBannerBox h1 {
+		font-size: 2.5rem;
 	}
 
 	.button-link {
@@ -67,19 +61,13 @@
 	}
 
 	.HeroBannerBox p {
-		font-size: .9em;
+		font-size: 1em;
 		word-break: normal;
 		word-wrap: no-wrap;
-		line-height: 1.4;
+		line-height: 1.6;
 	}
 
-	.navContainer {
-		padding: 0 2rem;
-	}
 
-	.contactButton {
-		display: inline-block;
-	}
 
 	.Cards {
 		width: 100%;

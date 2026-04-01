@@ -315,8 +315,7 @@ padding: var(--GalleryPadding);
 
 .CardGallery {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-/* grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));  */
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
 	gap: 2rem; 
 	justify-content: center;
 	width: 100%;
@@ -324,8 +323,6 @@ padding: var(--GalleryPadding);
 
 
 .Cards {
-	display: flex;
-	flex-direction: column;
 	border-radius: .5rem;
 	border: var(--LightGrey-color) 1px solid;
 	box-shadow: var(--box-shadow);
