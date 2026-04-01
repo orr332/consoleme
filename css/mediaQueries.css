@@ -94,6 +94,8 @@
 		flex-direction: column;
 		width: 100%;
 	}
-
+.Projects{
+	padding: 1rem;
+}
 
 }
