@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
 	.innerBanner {
 		width: 100%;
 		display: flex;
@@ -27,7 +27,7 @@
 	}
 
 	.navContainer{
-		padding: 0 1rem;
+		padding-inline: 1.5rem;
 	}
 		.ContentHolder,
 	.HeroBanner{
@@ -39,11 +39,10 @@
 
 
 @media (max-width: 950px) {
-/* 
+
 	.contactButton{
 		 display: block !important;
-    position: static;
-	} */
+	
 }
 
 
@@ -71,10 +70,6 @@
 			font-weight: 600;
 }
 
-	.Cards {
-		width: 100%;
-	}
-
 	.HeroBannerBox .button-link {
 		width: 100%;
 
@@ -94,12 +89,14 @@
 .Projects, .ProjectHolder{
 	padding: 1.5rem;
 }
+
 .CardGallery{
 display: grid;
 grid-template-columns: 1fr;
 width: 100%;
-padding: 1.5rem;
+padding: 1rem;
 }
+
 .contentHolderHeader::after {
 	display: none;
 }
