@@ -30,7 +30,7 @@
 		padding: 0 1rem;
 	}
 		.ContentHolder,
-	.HeroBanner, .ProjectHolder {
+	.HeroBanner{
 		padding: 1rem;
 		height: fit-content;
 	}
@@ -92,8 +92,8 @@
 		flex-direction: column;
 		width: 100%;
 	}
-.Projects{
-	padding: 1rem;
+.Projects, .ProjectHolder{
+	padding: 1.5rem;
 }
 .CardGallery{
 	padding: 8rem;
