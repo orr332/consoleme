@@ -302,9 +302,7 @@ padding: var(--GalleryPadding);
 	color: var(--favBlue);
 	display: block;
 }
-.contentHolderHeader p{
-	width: 50%;
-}
+
 
 .contentHolderHeader::after {
 	display: block;
