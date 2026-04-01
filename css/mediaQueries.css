@@ -96,7 +96,9 @@
 	padding: 1.5rem;
 }
 .CardGallery{
-	padding: 8rem;
+	padding: 2rem 8rem;
 }
-
+.contentHolderHeader::after {
+	display: none;
+}
 }
