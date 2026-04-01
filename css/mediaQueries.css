@@ -31,8 +31,8 @@
 		padding: 0 1rem;
 	}
 		.ContentHolder,
-	.HeroBanner {
-		padding: 30px;
+	.HeroBanner, .ProjectHolder {
+		padding: 1.5rem;
 		height: fit-content;
 	}
 }
@@ -86,7 +86,7 @@
 
 
 	.innerBanner {
-		padding: 1rem;
+		padding: .5rem;
 		display: flex;
 		flex-direction: column;
 	}
@@ -98,7 +98,7 @@
 	}
 
 	.Projects {
-		padding: 8px;
+		padding: .5rem;
 	}
 
 }
