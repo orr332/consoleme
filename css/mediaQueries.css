@@ -97,7 +97,8 @@
 .CardGallery{
 display: grid;
 grid-template-columns: 1fr;
-width: 75%;
+width: 100%;
+padding: 1.5rem;
 }
 .contentHolderHeader::after {
 	display: none;
