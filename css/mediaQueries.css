@@ -1,13 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-@media (max-width: 900px) {
-	.navContainer {
-		padding: 0 2rem;
-	}
-
-}
-
-
 @media (max-width: 1400px) {
 	
 	.Container{
@@ -17,51 +9,6 @@
 		z-index: 999;
 		font-weight: 500;
 	}
-
-	#pageTitle {
-		font-size: 18px;
-		margin-left: 15px;
-	}
-
-	.button-link {
-		margin-top: 25px;
-		margin-right: 15px;
-
-	}
-
-.innerBanner{
-flex: auto;
-padding: 50px;
-width: 100%;
-}
-.HeroBanner{
-		flex-direction: column;
-		grid-template-columns: 1fr;		
-}
-
-.HeroBannerBox p{
-	font-size: 1.25rem;
-	font-weight: 300;
-		line-height: 2rem;
-
-}
-.ContentHolder{
-		padding: 0 2rem;
-}
-.contentHolderHeader h1{
-text-align: left;
-}
-	.contentHolderHeader p{
-		display: none;
-	}
-
-	.Cards h1{
-		font-size: 1.25rem;
-	}
-.CardInfo{
-	padding: 1.25rem;
-}
-
 .button-link{
 	width: 100%;
 	margin: 0 auto;
@@ -70,47 +17,47 @@ text-align: left;
 		display: none;
 	}
 
-
-
-
-	#menu-icon {
-		color: white;
-		text-decoration: none;
-
+	.navContainer{
+		padding: 0 1rem;
 	}
-	.ProjectHolder{
-		border-radius: 12px;
-		margin: 40 auto;
-		padding: 1rem;
-	}
-	.CardGallery{
-		display: grid;
-grid-template-columns: repeat(2, 1fr); 
 
-	}
 }
 
-@media (max-width: 880px) {
-	.CardGallery{
+
+
+@media (max-width: 950px) {
+	.CardGallery {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
-margin: 0 auto;
-gap: 2rem;
+		grid-template-columns: 1fr;
+		margin: 0 auto;
 	}
- .ContentHolder, .HeroBanner{
-padding: 30px;	
-height: fit-content;
-}
+
+	.ContentHolder,
+	.HeroBanner {
+		padding: 30px;
+		height: fit-content;
+	}
 }
 
 
 @media (max-width: 720px) {
+	.navContainer {
+		padding: 0 2rem;
+	}
+
+	.innerBanner {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.header .logo {
 		z-index: 999;
 		font-weight: 500;
 		font-size: medium;
 	}
-	h1{
+
+	h1 {
 		line-height: 1rem;
 		font-size: 1rem;
 	}
@@ -120,14 +67,18 @@ height: fit-content;
 	}
 
 	.HeroBannerBox p {
-	font-size: .9em;
-        word-break: normal;
-        word-wrap: no-wrap;
-        line-height: 1.4;
+		font-size: .9em;
+		word-break: normal;
+		word-wrap: no-wrap;
+		line-height: 1.4;
 	}
 
 	.navContainer {
 		padding: 0 2rem;
+	}
+
+	.contactButton {
+		display: inline-block;
 	}
 
 	.Cards {
@@ -139,23 +90,20 @@ height: fit-content;
 
 	}
 
-	.HeroBannerBox h1{
-		font-size: 1.5rem;
-		line-height: 2rem;
-		text-align: left;
-	}
 
 	.innerBanner {
 		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 	}
-	.HeroButton{
+
+	.HeroButton {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 	}
-	.Projects{
+
+	.Projects {
 		padding: 8px;
 	}
 
