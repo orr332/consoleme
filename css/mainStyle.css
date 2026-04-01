@@ -248,11 +248,11 @@ letter-spacing: -0.02em;
 
 .Projects{
 	background-color: var(--CardColor);
-	padding-top: var(--GalleryPadding);
+	padding: var(--GalleryPadding) 0;
 }
 
-.Projects > :last-child{
-	padding-bottom: var(--GalleryPadding);
+.ProjectHolder:last-child{
+	margin-top: var(--GalleryPadding);
 }
 
 .HeroBannerBox img{
