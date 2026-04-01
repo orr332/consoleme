@@ -50,7 +50,7 @@
 @media (max-width: 720px) {
 	header .logo a{
 		z-index: 999;
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 1.5rem;
 	}
 
@@ -68,7 +68,7 @@
 
 .contentHolderHeader h2{
 			font-size: 1.25rem;
-			font-weight: 500;
+			font-weight: 600;
 }
 
 	.Cards {
