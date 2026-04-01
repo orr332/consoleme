@@ -55,8 +55,8 @@
 	}
 
 		.HeroBannerBox h1 {
-		font-size: 2rem;
-		line-height: 3rem;
+		font-size: 1.75rem;
+		margin-bottom: .5rem;
 	}
 	.HeroBannerBox p {
 		font-size: 1em;
