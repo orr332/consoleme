@@ -94,7 +94,7 @@
 		flex-direction: column;
 		width: 100%;
 	}
-.Projects{
+.Projects, .ProjectHolder{
 	padding: 1rem;
 }
 
