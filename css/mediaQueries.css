@@ -40,21 +40,19 @@
 
 
 @media (max-width: 950px) {
-
+/* 
 	.contactButton{
 		 display: block !important;
     position: static;
-	}
+	} */
 }
 
 
 @media (max-width: 720px) {
-
-	
-	.header .logo {
+	header .logo a{
 		z-index: 999;
 		font-weight: 500;
-		font-size: medium;
+		font-size: 1.5rem;
 	}
 
 		.HeroBannerBox h1 {
@@ -97,8 +95,5 @@
 		width: 100%;
 	}
 
-	.Projects {
-		padding: .5rem;
-	}
 
 }
