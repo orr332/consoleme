@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
 	.innerBanner {
 		width: 100%;
 		display: flex;
@@ -27,6 +27,7 @@
 	}
 
 	.navContainer{
+		width: var(--ContainerWidth);
 		padding-inline: 1.5rem;
 	}
 		.ContentHolder,
@@ -104,5 +105,8 @@ width: 100%;
 }
 .HeroBannerBox img {
 	display: none;
+}
+.contentHolderHeader{
+	margin-bottom: 1.5rem;
 }
 }
