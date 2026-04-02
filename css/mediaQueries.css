@@ -28,11 +28,11 @@
 
 	.navContainer{
 		width: var(--ContainerWidth);
-		padding-inline: 1.5rem;
+		padding-inline: 1.25rem;
 	}
 		.ContentHolder,
 	.HeroBanner{
-		padding: 1.75rem;
+		padding: 1.25rem;
 		height: fit-content;
 	}
 }
@@ -93,7 +93,7 @@
 		width: 100%;
 	}
 .Projects, .ProjectHolder{
-	padding: 1.75rem;
+		padding: 1.25rem;
 }
 
 .CardGallery{
@@ -106,7 +106,7 @@ width: 100%;
 	display: none;
 }
 .navContainer{
-	padding-inline: 1.75rem;
+	padding-inline: 1.25rem;
 }
 .HeroBannerBox img {
 	display: none;
