@@ -53,11 +53,7 @@
 		font-weight: 500;
 		font-size: 1.5rem;
 	}
-	.contactButton{
-		display: flex;
-		flex-direction: end;
-		margin-right: 1.5rem;
-	}
+
 
 		.HeroBannerBox h1 {
 			letter-spacing: 0.01rem;
