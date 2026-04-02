@@ -12,6 +12,7 @@
 	}
 .innerBannerButton, .innerBannerButton a {
 		font-size: .875rem;
+		font-weight: 500;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -57,7 +58,7 @@
 .contactBtn{
 	padding: 16px;
 		font-size: .875rem;
-	font-weight: 600;
+		font-weight: 500;
 }
 
 		.HeroBannerBox h1 {
