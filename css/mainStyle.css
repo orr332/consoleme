@@ -156,8 +156,6 @@ nav ul li {
 	border-radius: 30px;
 	transition-duration: 0.5s;
 	color: white;
-	
-	letter-spacing: 1px;
 }
 
 .contactBtn:hover{
@@ -236,7 +234,7 @@ letter-spacing: -0.02em;
 }
 
 .innerBannerButton, .innerBannerButton a{
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: var(--HeadlineFont);
 		text-transform: uppercase;
   display: flex;
   justify-content:flex-start;
