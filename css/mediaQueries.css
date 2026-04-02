@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 @media (max-width: 1500px) {
+	.navContainer{
+		max-width: 100%;
+		padding-inline: 1.25rem;
+	}
 	.innerBanner {
 		width: 100%;
 		display: flex;
@@ -26,10 +30,7 @@
 		display: none;
 	}
 
-	.navContainer{
-		max-width: 100%;
-		padding-inline: 1.25rem;
-	}
+
 		.ContentHolder,
 	.HeroBanner{
 		padding: 1.25rem;
@@ -54,7 +55,7 @@
 	}
 	.contactButton{
 		display: flex;
-		flex-direction: start;
+		flex-direction: end;
 	}
 
 		.HeroBannerBox h1 {
@@ -105,9 +106,10 @@ width: 100%;
 .contentHolderHeader::after {
 	display: none;
 }
-.navContainer{
-	padding-inline: 1.25rem;
-}
+	.navContainer{
+		max-width: 100%;
+		padding-inline: 1.25rem;
+	}
 .HeroBannerBox img {
 	display: none;
 }
