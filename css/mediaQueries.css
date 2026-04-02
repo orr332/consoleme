@@ -27,7 +27,7 @@
 	}
 
 	.navContainer{
-		width: var(--ContainerWidth);
+		max-width: 100%;
 		padding-inline: 1.25rem;
 	}
 		.ContentHolder,
@@ -40,10 +40,6 @@
 
 
 @media (max-width: 950px) {
-
-	.contactButton{
-		 display: block !important;
-}
 .Cards h1{
 	font-size: 1rem;
 }
@@ -55,6 +51,10 @@
 		z-index: 999;
 		font-weight: 500;
 		font-size: 1.5rem;
+	}
+	.contactButton{
+		display: flex;
+		flex-direction: start;
 	}
 
 		.HeroBannerBox h1 {
