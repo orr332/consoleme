@@ -32,7 +32,7 @@
 	}
 		.ContentHolder,
 	.HeroBanner{
-		padding: 1.5rem;
+		padding: 1.75rem;
 		height: fit-content;
 	}
 }
@@ -60,7 +60,7 @@
 		.HeroBannerBox h1 {
 			letter-spacing: 0.01rem;
 			font-weight: 500;
-		font-size: 1.563rem;
+		font-size: 1.75rem;
 		line-height: 1.5rem;
 		margin-top: 2rem;
 	}
@@ -93,7 +93,7 @@
 		width: 100%;
 	}
 .Projects, .ProjectHolder{
-	padding: 1.5rem;
+	padding: 1.75rem;
 }
 
 .CardGallery{
@@ -106,7 +106,7 @@ width: 100%;
 	display: none;
 }
 .navContainer{
-	padding-inline: 1.5rem;
+	padding-inline: 1.75rem;
 }
 .HeroBannerBox img {
 	display: none;
