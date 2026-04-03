@@ -194,7 +194,7 @@ border-radius: var(--border-radius); /* Default border radius */
 		display: flex;
 	justify-content: center;
 	width: 100%;
-	height: 50vb;
+	padding: var(--GalleryPadding);
 	background-color: white;
 background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0c5988, #006699);
 }
