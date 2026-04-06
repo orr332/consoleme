@@ -65,9 +65,11 @@
 			letter-spacing: 0.01rem;
 			font-weight: 500;
 		font-size: 1.75rem;
-		line-height: 1rem;
+		line-height: 1.75rem;
 		margin-top: 2rem;
-	}
+	text-wrap: pretty;	
+}
+
 	.HeroBannerBox p {
 		font-size: 1em;
 		word-break: normal;
