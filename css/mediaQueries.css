@@ -64,8 +64,8 @@
 		.HeroBannerBox h1 {
 			letter-spacing: 0.01rem;
 			font-weight: 500;
-		font-size: 1.75rem;
-		line-height: 1.75rem;
+		font-size: 2rem;
+		line-height: 2rem;
 		margin-top: 2rem;
 	text-wrap: pretty;	
 }
