@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Miranda+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
 
@@ -26,7 +26,7 @@
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
---HeadlineFont:  "Miranda Sans", sans-serif;
+--HeadlineFont:  "DM Sans", sans-serif;
 	--HeaderMain: 3.5rem;
 	--SubHeader: 2rem;
 	--CardHeader:1.25rem;
@@ -49,6 +49,7 @@ p, p a{
 	line-height: var(--Lineheight);
 	color: black;
 	text-wrap: pretty;
+	letter-spacing: 0.01em;
 }
 p a{
 	text-decoration: underline;
@@ -225,7 +226,7 @@ background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0
 	line-height: 4.5rem;
 	margin-bottom: 2rem;
 font-weight: 500;
-letter-spacing: -0.02em;
+letter-spacing:.04em;
 }
 
 .HeroBannerBox p{
