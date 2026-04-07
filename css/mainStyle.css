@@ -14,7 +14,7 @@
 	/* --favBlue:#1d2834; */
 	/* --LightGreyHighlight: #f4f2ee; */
  --box-shadow: 0 .2rem .6rem -.2rem rgba(33, 43, 54, .16);
-	--GalleryPadding: 3rem;
+	--GalleryPadding: 3.5rem;
 	--CardsPadding:1rem;
 	--border-radius: 1rem;
 	--image-border-radius: 6px;
@@ -281,9 +281,10 @@ align-content:end;
 
 
  .ContentHolder{
+	padding: var(--GalleryPadding);
+	background-color: white;
 	margin: 0 auto;
 	width: 100%;
-padding: var(--GalleryPadding); 
 	max-width: var(--ContainerWidth);
 	height: auto;
 	display:flex;
