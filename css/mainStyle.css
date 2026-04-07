@@ -17,7 +17,7 @@
 	--GalleryPadding: 3.5rem;
 	--CardsPadding:1rem;
 	--border-radius: 1rem;
-	--image-border-radius: 6px;
+	--image-border-radius: 8px;
 	--HeroBannerWidth: 130rem;
 	--ContainerWidth: 1500px;
 	--Lineheight: 1.5em;
@@ -281,7 +281,7 @@ align-content:end;
 
 
  .ContentHolder{
-	padding: var(--GalleryPadding);
+	padding: var(--ga);
 	background-color: white;
 	margin: 0 auto;
 	width: 100%;

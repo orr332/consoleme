@@ -15,7 +15,8 @@
 		font-weight: 500;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+	align-items: center;
+	flex-direction: row;
 	gap: 1.25rem;
 	width: 100%;
 }
@@ -100,7 +101,7 @@
 		width: 100%;
 	}
 .Projects, .ProjectHolder{
-		padding: 1rem;
+		padding: 1.25rem;
 }
 
 .CardGallery{
@@ -121,5 +122,14 @@ width: 100%;
 }
 .contentHolderHeader{
 	margin-bottom: 1.5rem;
+}
+.innerBannerButton, .innerBannerButton a {
+		font-size: .875rem;
+		font-weight: 500;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1.25rem;
+	width: 100%;
 }
 }
