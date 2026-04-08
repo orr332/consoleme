@@ -27,8 +27,8 @@
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
 --HeadlineFont:  "DM Sans", sans-serif;
-	--HeaderMain: 3.5rem;
-	--SubHeader: 2rem;
+	--HeaderMain: 5.5rem;
+	--SubHeader: 2.5rem;
 	--CardHeader:1.25rem;
 }
 
@@ -223,7 +223,7 @@ background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0
 
 
 .HeroBannerBox h1{
-	line-height: 4.5rem;
+	line-height: 5.5rem;
 	margin-bottom: 2rem;
 font-weight: 500;
 letter-spacing:.04em;
