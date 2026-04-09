@@ -1,9 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 @media (max-width: 1500px) {
+	.Projects{
+		padding-inline: 3.5rem;
+	}
 	.navContainer{
 		max-width: 100%;
-		padding-inline: 1.25rem;
+		padding-inline: 3.5rem;
 	}
 	.innerBanner {
 		width: 100%;
