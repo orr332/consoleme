@@ -223,10 +223,10 @@ background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0
 
 
 .HeroBannerBox h1{
-	line-height: 5.5rem;
+	line-height: 5.25rem;
 	margin-bottom: 2rem;
-font-weight: 500;
-letter-spacing:.04em;
+font-weight: 600;
+letter-spacing: 0.01em;
 }
 
 .HeroBannerBox p{
@@ -348,7 +348,7 @@ height: fit-content;
 }
 
 .Cards h1{
-	letter-spacing: .02em;
+	letter-spacing: .01em;
 	font-family: var(--HeadlineFont);
     font-size: var(--CardHeader);
 	margin-bottom: 8px;
