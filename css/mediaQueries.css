@@ -36,7 +36,7 @@
 
 		.ContentHolder,
 	.HeroBanner{
-		padding: 1.25rem;
+		padding:var(--GalleryPadding);
 		height: fit-content;
 	}
 }
@@ -87,7 +87,9 @@
 		width: 100%;
 	}
 .HeroBanner{
-	min-height: 90svh
+	min-height: 90svh;
+			padding: 1.25rem;
+
 }
 
 	.innerBanner {
