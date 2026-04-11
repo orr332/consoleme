@@ -43,6 +43,13 @@
 		padding:var(--GalleryPadding);
 		height: fit-content;
 	}
+	.PostingPage{
+		flex-direction: column;
+		width: 100%;
+	}
+	.SideNavArticle{
+		width: 100%;
+	}
 }
 
 
