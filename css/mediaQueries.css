@@ -127,10 +127,10 @@ width: 100%;
 }
 	.navContainer{
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		max-width: 100%;
-	}
+		max-width: 1500px;
+		width: 100%;
+}
+
 .HeroBannerBox img {
 	display: none;
 }

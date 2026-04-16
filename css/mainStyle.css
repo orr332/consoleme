@@ -107,7 +107,6 @@ overflow: hidden;
 	justify-content: space-between;
 		margin: 0 auto;
 	height: inherit;
-	width: var(--ContainerWidth);
 }
 
 header .logo a{
