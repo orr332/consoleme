@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 
@@ -27,7 +27,7 @@
 	--secondary-color: #e9e9e9;
 	--LightGrey-color: #c9c9c9;
 	--CardColor: #F3F4F5;
---HeadlineFont:  "Zalando Sans", sans-serif;
+--HeadlineFont:  "Rubik", sans-serif;
 	--HeaderMain: 5.5rem;
 	--SubHeader: 2.5rem;
 	--CardHeader:1.25rem;
@@ -227,12 +227,14 @@ background-image: linear-gradient(to right bottom, #123458, #134068, #124c78, #0
 .HeroBannerBox h1{
 	line-height: 5.25rem;
 	margin-bottom: 1rem;
-font-weight: 500;
+font-weight: 400;
 letter-spacing: 0.01em;
+text-align: center;
 }
 
 .HeroBannerBox p{
 	color: white;
+	text-align: center;
 }
 
 .innerBannerButton, .innerBannerButton a{
@@ -291,7 +293,6 @@ align-content:end;
 
 
  .ContentHolder{
-	padding: var(--ga);
 	background-color: white;
 	margin: 0 auto;
 	width: 100%;
@@ -307,9 +308,10 @@ align-content:end;
 .contentHolderHeader h2, h2{
 	font-family: var(--HeadlineFont);
     font-size: clamp(var(--SubHeader), 2rem, 1.25rem);
-	font-weight: 600;
+	font-weight: 400;
 	letter-spacing: -.01em;
 	color: var(--favBlue);
+	text-align: center;
 }
 
 
