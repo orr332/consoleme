@@ -65,7 +65,7 @@
 	header .logo a{
 		z-index: 999;
 		font-weight: 500;
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
 .contactBtn{
 	padding: 16px;
@@ -127,8 +127,9 @@ width: 100%;
 }
 	.navContainer{
 		display: flex;
-		max-width: 1500px;
-		width: 100%;
+justify-content: space-between;
+padding-inline: 1rem;		
+width: 100%;
 }
 
 .HeroBannerBox img {
