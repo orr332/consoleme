@@ -97,6 +97,7 @@ background-color: white;
 box-shadow: var(--box-shadow);
 position:sticky;
 top: 0;
+overflow: hidden;
 }
 
 
