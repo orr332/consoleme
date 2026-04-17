@@ -68,7 +68,7 @@ p a{
 }
 	
 
-html, body{
+html{
 	overflow-x: hidden;
 	 scroll-padding-top: 6rem;
 }
