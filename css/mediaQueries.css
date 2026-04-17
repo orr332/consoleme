@@ -128,7 +128,7 @@ width: 100%;
 	.navContainer{
 		display: flex;
 justify-content: space-between;
-padding-inline: 1rem;		
+padding-inline: 1.5rem;		
 width: 100%;
 }
 
