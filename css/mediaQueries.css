@@ -83,8 +83,7 @@
 
 	.HeroBannerBox p {
 		font-size: 1em;
-		word-break: normal;
-		word-wrap: no-wrap;
+		text-wrap: pretty;
 		line-height: 1.6;
 	}
 
@@ -113,7 +112,7 @@
 		width: 100%;
 	}
 .Projects, .ProjectHolder{
-		padding: 1.25rem;
+		padding: 1rem;
 }
 
 .CardGallery{
